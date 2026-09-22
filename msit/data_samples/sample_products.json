@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "title": "Micro Ingredients Organic Matcha Green Tea, 1lb",
+      "bullet_point": "100% Pure Culinary Grade | Sugar Free, Eco-friendly Recyclable Bag. Japanese everyday drink.",
+      "gold": {
+        "brand": "Micro Ingredients",
+        "Tea_Type": "Green",
+        "Product_Shape": "Powder",
+        "Weight": "1lb"
+      }
+    },
+    {
+      "title": "Chiquita Banana Bread Mix 13.7 oz (1 Box makes 12 Delicious Slices)",
+      "bullet_point": "Makes 12 delicious slices. Easy to prepare, just add bananas. Net weight 13.7 oz (380g).",
+      "gold": {
+        "brand": "Chiquita",
+        "product_name": "Banana Bread Mix",
+        "net_weight": "13.7 oz (380g)",
+        "quantity": "13.7 oz"
+      }
+    },
+    {
+      "title": "Traditional Medicinals Herbal Tea, Eucalyptus Mint, Caffeine Free, 16 Tea Bags",
+      "bullet_point": "16 tea bags, herbal tea. Refreshment and digestive aid. Dry and well-ventilated storage.",
+      "gold": {
+        "brand": "Traditional Medicinals",
+        "type": "herbal tea",
+        "flavor": "eucalyptus and mint",
+        "caffeine_content": "caffeine-free",
+        "quantity": "16 tea bags",
+        "Packaging Type": "Tea bags"
+      }
+    }
+  ]
+}
