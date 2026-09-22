@@ -2,7 +2,7 @@
 
 ## Kiến trúc tổng quan
 
-```mermaid
+```text
 /mnt/agents/output/msit/
 ├── config.py                  # hyperparams đúng paper (lr 3e-4, 10 epochs, T=0.2, top_p=0.7)
 ├── prompts/
