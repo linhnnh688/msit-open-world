@@ -23,7 +23,7 @@ class MSITConfig:
     # ---------------- Training (paper Section 4.1) ----------------
     learning_rate: float = 3e-4
     epochs: int = 10
-    optimizer: str = "adam"
+    optimizer: str = "adamw_torch"  # HF TrainingArguments name for Adam(W)
     per_device_batch_size: int = 4
     gradient_accumulation_steps: int = 4
     # LoRA hyper-parameters (paper does not report them; sensible defaults)

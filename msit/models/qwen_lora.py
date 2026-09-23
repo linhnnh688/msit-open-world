@@ -1,31 +1,40 @@
 """Qwen-VL LoRA-fine-tuned backend (paper: MSIT(Qwen))."""
 
-from typing import Any, Optional
+from typing import Any, List, Optional
 
-from .lora_trainer import LoRATrainer
+from .lora_trainer import LoRATrainer, build_prompt
 from ..config import MSITConfig
 
 
 class QwenVL_LoRABackend:
     model_name_or_path: str = "Qwen/Qwen-VL-Chat"
 
-    def __init__(self, cfg: Optional[MSITConfig] = None, lora_weights: Optional[str] = None):
+    def __init__(
+        self,
+        cfg: Optional[MSITConfig] = None,
+        lora_weights: Optional[str] = None,
+        target_modules: Optional[List[str]] = None,
+    ):
         self.cfg = cfg or MSITConfig()
-        self.trainer = LoRATrainer(self.model_name_or_path, self.cfg)
+        self.trainer = LoRATrainer(
+            self.model_name_or_path,
+            self.cfg,
+            use_causal_lm=True,
+            target_modules=target_modules,
+        )
         self.lora_weights = lora_weights
         self._model = None
         self._tokenizer = None
 
     def load(self) -> None:  # pragma: no cover - requires GPU
-        self._model = self.trainer.load_model()
-        try:
-            from transformers import AutoTokenizer
+        if self.lora_weights:
+            from peft import PeftModel
 
-            self._tokenizer = AutoTokenizer.from_pretrained(
-                self.model_name_or_path, trust_remote_code=True
-            )
-        except ImportError as e:
-            raise ImportError("transformers is required to load Qwen-VL.") from e
+            base = self.trainer.load_model(apply_lora=False)
+            self._model = PeftModel.from_pretrained(base, self.lora_weights)
+        else:
+            self._model = self.trainer.load_model()
+        self._tokenizer = self.trainer.load_processor()
 
     def generate(
         self,
@@ -49,3 +58,6 @@ class QwenVL_LoRABackend:
                 do_sample=True,
             )
         return self._tokenizer.decode(out[0], skip_special_tokens=True)
+
+
+__all__ = ["QwenVL_LoRABackend", "build_prompt"]
