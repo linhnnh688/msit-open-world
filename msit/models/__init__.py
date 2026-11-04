@@ -5,6 +5,7 @@ from .internlm_lora import InternLMLoRABackend
 from .llava_lora import LLaVALoRABackend
 from .lora_trainer import LoRATrainer, build_lora_config, build_prompt
 from .mock_backend import MockMLLMBackend
+from .qwen_local import QwenLocalDataGenerator
 from .qwen_lora import QwenVL_LoRABackend
 
 __all__ = [
@@ -15,5 +16,6 @@ __all__ = [
     "build_prompt",
     "LLaVALoRABackend",
     "QwenVL_LoRABackend",
+    "QwenLocalDataGenerator",
     "InternLMLoRABackend",
 ]

@@ -76,6 +76,9 @@ msit-open-world/
 ├── msit/
 │   ├── config.py                       # Cấu hình siêu tham số huấn luyện, suy luận và lọc
 │   ├── demo.py                         # Kịch bản chạy thực nghiệm pipeline đầu-cuối (S1 -> S2 -> S3)
+│   ├── notebooks/
+│   │   ├── msit-open-world-0ea169.ipynb          # Notebook gốc (code dữ liệu viết trực tiếp trong cell)
+│   │   └── msit-open-world-data-pipeline.ipynb   # Notebook tái dựng: chỉ gọi package `msit`
 │   ├── prompts/
 │   │   ├── agtd_prompts.py             # Các hàm tạo prompt trích xuất và hợp nhất AGTD
 │   │   ├── cttd_prompts.py             # Các hàm tạo prompt suy luận 5 bước CTTD
@@ -85,12 +88,17 @@ msit-open-world/
 │   │   ├── agtd_builder.py             # Pipeline khởi tạo dữ liệu AGTD
 │   │   ├── cttd_builder.py             # Pipeline khởi tạo dữ liệu CTTD đối kháng âm/dương
 │   │   ├── jsonl.py                    # Tiện ích đọc/ghi định dạng JSONL
+│   │   ├── readers.py                  # Đọc annotation WOAM / OAMine thô
+│   │   ├── preparator.py               # Lọc nhiễu, cân bằng danh mục, chia tập động (test/AGTD/CTTD)
+│   │   ├── sft_labels.py               # Ghi JSONL nhãn AGTD/CTTD có thể chạy tiếp (resume)
+│   │   ├── build_sft.py                # Driver đầu-cuối dựng dữ liệu SFT (Kaggle)
 │   │   └── sft_datasets/               # Tập dữ liệu huấn luyện (agtd_train.jsonl, cttd_train.jsonl) và test_set.jsonl
 │   ├── models/
 │   │   ├── base_mllm.py                # Giao diện chuẩn cho các backend MLLM
 │   │   ├── mock_backend.py             # Backend giả lập phục vụ kiểm thử không cần GPU
 │   │   ├── gpt4_backend.py             # Backend kết nối OpenAI GPT-4V API
 │   │   ├── lora_trainer.py             # Bộ huấn luyện LoRA/QLoRA cho các MLLM
+│   │   ├── qwen_local.py               # Generator Qwen2.5-VL 4-bit sinh nhãn AGTD/CTTD tại chỗ
 │   │   ├── llava_lora.py               # Wrapper suy luận cho LLaVA-1.5-7B + LoRA
 │   │   ├── qwen_lora.py                # Wrapper suy luận cho Qwen-VL / Qwen2-VL + LoRA
 │   │   └── internlm_lora.py            # Wrapper suy luận cho InternLM-XComposer2-7B + LoRA
@@ -108,7 +116,8 @@ msit-open-world/
 │   ├── data_samples/
 │   │   └── sample_products.json        # Dữ liệu mẫu kiểm thử nhanh pipeline
 │   ├── tests/
-│   │   └── test_msit.py                # Bộ kiểm thử đơn vị (Unit tests)
+│   │   ├── test_msit.py                # Bộ kiểm thử đơn vị (Unit tests)
+│   │   └── test_data_build.py          # Kiểm thử readers, chia tập và ghi nhãn SFT
 │   └── utils/
 │       ├── image_loader.py             # Tiện ích tải và tiền xử lý ảnh sản phẩm
 │       └── json_parser.py              # Bộ phân tích cú pháp JSON đầu ra của MLLM
@@ -126,12 +135,29 @@ Không yêu cầu GPU hay khóa API, dùng để xác minh toàn bộ các mô-�
 ```bash
 # Chạy bộ kiểm thử đơn vị
 python msit/tests/test_msit.py
+python msit/tests/test_data_build.py
 
 # Chạy thực thi pipeline 3 giai đoạn (Stage 1 -> Stage 2 -> Stage 3) và xuất độ đo
 python -m msit.demo
 ```
 
-### 4.2. Chạy Huấn luyện QLoRA bằng Notebook `finetune.ipynb` (Trên Kaggle hoặc Máy trạm GPU)
+### 4.2. Dựng lại dữ liệu SFT (AGTD / CTTD / Test) bằng Qwen2.5-VL 4-bit
+
+Toàn bộ logic dựng dữ liệu nằm trong `msit/data` và `msit/models/qwen_local.py`; notebook
+`msit/notebooks/msit-open-world-data-pipeline.ipynb` chỉ cấu hình đường dẫn Kaggle và gọi các hàm này.
+
+```bash
+# Một lệnh cho toàn bộ pipeline (mặc định theo layout Kaggle)
+python -m msit.data.build_sft \
+    --input-dir /kaggle/input/datasets/kunzero106/msit-open-world-dataset \
+    --working-dir /kaggle/working
+```
+
+- Input yêu cầu: `<input-dir>/datasets/oamine/annotations/<Category>.jsonl` và `<input-dir>/datasets/images/oamine/<asin>.jpg`.
+- Output: `splits_checkpoint.json`, `test_set.jsonl`, `agtd_train.jsonl`, `cttd_train.jsonl` trong `--working-dir`.
+- Chạy lại sẽ đọc `splits_checkpoint.json` và bỏ qua các ASIN đã sinh nhãn; dùng `--rebuild` để chia tập lại từ đầu.
+
+### 4.3. Chạy Huấn luyện QLoRA bằng Notebook `finetune.ipynb` (Trên Kaggle hoặc Máy trạm GPU)
 
 1. Mở tệp **`finetune.ipynb`** trên môi trường **Kaggle Notebook** (hoặc JupyterLab có GPU $\ge 16\text{ GB VRAM}$).
 2. Trong phần **Settings** của Kaggle:
@@ -144,7 +170,7 @@ python -m msit.demo
    - Huấn luyện LoRA adapter thông qua `msit.models.lora_trainer.LoRATrainer` cho các mô hình (`llava-hf/llava-1.5-7b-hf`, `Qwen/Qwen-VL-Chat` / `Qwen/Qwen2-VL-7B-Instruct`, `internlm/internlm-xcomposer2-7b`).
    - Lưu trọng số adapter vào thư mục đích (ví dụ: `msit/results/msit_qwen_lora_final/`) và chạy kiểm thử suy luận.
 
-### 4.3. Chạy Đánh giá 5 Lần Độc lập (5 Independent Trials Evaluation) với Adapter đã Huấn luyện
+### 4.4. Chạy Đánh giá 5 Lần Độc lập (5 Independent Trials Evaluation) với Adapter đã Huấn luyện
 
 Để nạp trọng số LoRA đã huấn luyện trong `msit/results/msit_qwen_lora_final/` và chạy đánh giá 5 lần thử nghiệm độc lập (`n_trials = 5`, `temperature = 0.2`, `top_p = 0.7`) trên tập kiểm thử `msit/data/sft_datasets/test_set.jsonl`:
 
