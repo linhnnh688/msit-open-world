@@ -10,16 +10,20 @@
 ## 1. Bối cảnh & Đặt vấn đề (Background & Motivation)
 
 ### 1.1 Khái niệm Open-World Product Attribute Mining (AM)
+
 Trong thương mại điện tử (E-commerce), các **thuộc tính sản phẩm (Product Attributes)** đóng vai trò cốt lõi trong việc:
+
 - Chuẩn hóa danh mục sản phẩm (Catalog enrichment).
 - Hỗ trợ công cụ tìm kiếm, lọc và đề xuất sản phẩm (Search, Filtering, Recommendation).
 - Giúp người tiêu dùng đưa ra quyết định mua sắm nhanh chóng, chính xác.
 
 Khác với bài toán khai phá thuộc tính truyền thống dạng **Closed-World** (nơi danh sách thuộc tính bị giới hạn trong ontology/schema định trước), bài toán **Open-World Attribute Mining** yêu cầu mô hình phải:
+
 - Khai phá được các thuộc tính **mới**, chưa từng xuất hiện trong schema (Unseen / Free-form attributes).
 - Trích xuất đồng thời cả **Tên thuộc tính (Attribute Name)** và **Giá trị thuộc tính (Attribute Value)** từ thông tin giới thiệu sản phẩm.
 
 ### 1.2 Hai hạn chế cốt lõi của các nghiên cứu trước đây
+
 Mặc dù đã có nhiều mô hình tiền nhiệm (như OpenTag, OA-Mine, Amacer), các tác giả chỉ ra hai lỗ hổng lớn:
 
 1. **Chưa tận dụng thông tin Đa phương thức (Underutilization of multimodal information):**
@@ -37,6 +41,7 @@ Mặc dù đã có nhiều mô hình tiền nhiệm (như OpenTag, OA-Mine, Amac
 Để giải quyết hai bài toán trên, nhóm tác giả đề xuất khung làm việc **MSIT (Multimodal Self-Correction Instruction Tuning)** sử dụng các mô hình ngôn ngữ đa phương thức lớn (**MLLMs - Multimodal Large Language Models**).
 
 Kiến trúc MSIT bao gồm 3 trụ cột chính:
+
 1. **Attribute Generation Tuning Data (AGTD) Construction** – Xây dựng dữ liệu tinh chỉnh sinh thuộc tính.
 2. **Chain-of-Thought Tuning Data (CTTD) Construction** – Xây dựng dữ liệu tinh chỉnh chuỗi suy luận tự sửa lỗi 5 bước.
 3. **3-Stage Attribute Inference** – Quy trình suy luận 3 giai đoạn (Sinh hàng loạt $\rightarrow$ Lọc trùng lặp $\rightarrow$ Thẩm định tuần tự bằng CoT 5 bước).
@@ -93,7 +98,8 @@ flowchart TD
 | **Step 4** | **Text-Based Attribute Verification** | Dùng văn bản để xác nhận xem có bằng chứng rõ ràng cho thuộc tính không; nếu có thì trích xuất giá trị chính xác. |
 | **Step 5** | **Final Evaluation and Decision-Making** | Tổng hợp toàn bộ suy luận ở 4 bước trước để đưa ra phán quyết nhị phân cuối cùng: **Yes** (hợp lệ) hoặc **No** (bác bỏ). |
 
-#### Contrastive Chain-of-Thought Tuning Data (Mẫu âm đối nghịch):
+#### Contrastive Chain-of-Thought Tuning Data (Mẫu âm đối nghịch)
+
 Nếu chỉ huấn luyện với các thuộc tính hợp lệ (nhãn luôn là "Yes"), mô hình sẽ học vẹt và luôn trả lời "Yes". Nhóm tác giả đã bổ sung các **mẫu âm (Negative Samples)** – lấy thuộc tính từ các danh mục sản phẩm hoàn toàn khác (được chọn lọc thủ công) để đảm bảo tỷ lệ mẫu Dương/Âm cân bằng (50/50).
 
 ---
@@ -151,7 +157,8 @@ Dưới đây là bảng tóm tắt kết quả chính trên 2 tập dữ liệu
 | **MSIT (InternLM)** | 63.40 / 46.80 | 25.00 / 25.53 | 70.79 / 46.99 | 37.52 / 27.37 |
 | **MSIT (LLAVA-7B)** | **66.90 / 66.99** | **35.34 / 52.50** | **74.50 / 63.06** | **54.33 / 51.54** |
 
-#### Những điểm nổi bật:
+#### Những điểm nổi bật
+
 1. **Vượt trội toàn diện:** MSIT (LLaVA-7B) đánh bại tất cả các baselines hiện đại nhất, kể cả GPT-4 và các mô hình AM chuyên biệt (Amacer, OA-Mine).
 2. **Cải thiện vượt bậc so với Backbone gốc:** Trên WOAM, MSIT nâng độ chính xác Exact Match của LLaVA-7B từ **10.61% lên 35.34%** (tăng hơn 3.3 lần); Recall từ **26.22% lên 52.50%** (tăng gấp đôi).
 3. **Độ chính xác vượt trội trên OAMine:** Đạt **54.33% Exact Match Precision**, cao hơn gấp đôi so với Amacer (22.98%) và vượt xa GPT-4 (29.25%).
@@ -195,11 +202,13 @@ Dưới đây là bảng tóm tắt kết quả chính trên 2 tập dữ liệu
 ## 5. Đánh giá Tổng thể & Ý nghĩa Ứng dụng
 
 ### 5.1 Ưu điểm nổi bật (Strengths)
+
 1. **Thiết kế giải quyết trúng hai "tử huyệt":** Khắc phục triệt để hiện tượng bỏ quên hình ảnh (qua cơ chế tách đầu vào khi tạo AGTD) và ảo giác gán slogan làm thuộc tính (qua CoT 5 bước và mẫu âm đối nghịch).
 2. **Quy trình suy luận thực tế (Practical 3-Stage Pipeline):** Kết hợp hài hòa giữa sinh hàng loạt tốc độ cao (Batch), bộ lọc heuristic tối ưu tài nguyên (Stage 2) và kiểm chứng suy luận sâu (Stage 3).
 3. **Hiệu quả mẫu cực cao (Sample Efficiency):** Chỉ cần 1.000 mẫu AGTD và 300 mẫu CTTD cùng kỹ thuật LoRA trên một GPU A100 duy nhất đã vượt qua mô hình khổng lồ như GPT-4.
 
 ### 5.2 Hạn chế & Góc nhìn phản biện (Limitations)
+
 1. **Quy mô tham số mô hình:** Nhóm tác giả mới chỉ thử nghiệm trên các MLLM 7B (LLaVA-7B, Qwen-VL-7B, InternLM-7B) do giới hạn tài nguyên tính toán; chưa đánh giá trên các mô hình 13B, 34B hay 70B.
 2. **Độ trễ suy luận (Inference Latency):** Việc chạy suy luận CoT 5 bước tuần tự (Sequential) cho từng thuộc tính ở Stage 3 có thể làm tăng thời gian xử lý nếu một sản phẩm có quá nhiều thuộc tính ứng viên, cần tối ưu hóa batching hoặc kỹ thuật suy luận song song.
 3. **Phương thức mở rộng:** Hiện tại chỉ kết hợp Ảnh 2D + Văn bản; chưa mở rộng sang video trình diễn sản phẩm hay bảng dữ liệu cấu trúc phức tạp.

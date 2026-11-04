@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Regenerable dataset artifacts
+msit/data/sft_datasets/splits_checkpoint.json
+__huggingface_repos__.json
+
+# Intermediate training checkpoints (final adapter is tracked)
+msit/results/msit_qwen_lora/

@@ -111,18 +111,39 @@ msit-open-world/
 │   │   ├── metrics.py                  # Độ đo Exact Match, Similar Match, Precision, Recall
 │   │   └── evaluate.py                 # Chạy đánh giá lặp 5 trials với random seeds độc lập
 │   ├── results/
-│   │   ├── msit_qwen_lora/             # Các checkpoints quá trình huấn luyện (checkpoint-82, 164, 246)
-│   │   └── msit_qwen_lora_final/       # Trọng số LoRA adapter hoàn chỉnh sau huấn luyện
+│   │   └── msit_qwen_lora_final/       # LoRA adapter hoàn chỉnh — artifact dùng cho inference/đánh giá
 │   ├── data_samples/
 │   │   └── sample_products.json        # Dữ liệu mẫu kiểm thử nhanh pipeline
 │   ├── tests/
 │   │   ├── test_msit.py                # Bộ kiểm thử đơn vị (Unit tests)
 │   │   └── test_data_build.py          # Kiểm thử readers, chia tập và ghi nhãn SFT
 │   └── utils/
-│       ├── image_loader.py             # Tiện ích tải và tiền xử lý ảnh sản phẩm
 │       └── json_parser.py              # Bộ phân tích cú pháp JSON đầu ra của MLLM
 └── docs/                               # Thư mục chứa bài báo gốc và báo cáo khoa học của nhóm
 ```
+
+### 3.1. Ghi chú dọn dẹp và số liệu lưu trữ (2026-11-04)
+
+Đã xóa các file không còn được tham chiếu hoặc tái tạo được, chỉ giữ lại những gì inference/đánh giá cần:
+
+| Đã xóa | Lý do |
+| --- | --- |
+| `msit/utils/image_loader.py` | Không có file/notebook nào import |
+| `msit/results/__huggingface_repos__.json`, `msit/data/sft_datasets/__huggingface_repos__.json` | Metadata cache của HuggingFace, không dùng |
+| `msit/data/sft_datasets/splits_checkpoint.json` (7,7 MB) | Cache chia tập, tái tạo bằng `python -m msit.data.build_sft`; 3 file `.jsonl` đã chứa đủ ASIN từng split |
+| `msit/results/msit_qwen_lora/checkpoint-{82,164,246}` (92 MB) | Checkpoint trung gian kèm `optimizer.pt`/`scheduler.pt`; inference chỉ dùng `msit_qwen_lora_final/` |
+
+Số liệu huấn luyện trích từ `trainer_state.json` của các checkpoint đã xóa (để không mất bằng chứng):
+
+| Checkpoint | Epoch | Global step | Loss (step 10 → cuối epoch) |
+| --- | ---: | ---: | --- |
+| checkpoint-82 | 1.0 | 82 | 2.0925 → 1.2728 (step 70) |
+| checkpoint-164 | 2.0 | 164 | — → 1.2500 (step 150) |
+| checkpoint-246 | 3.0 | 246 | — → 1.1976 (step 230) |
+
+- Cấu hình adapter còn lại (`msit_qwen_lora_final/adapter_config.json`): base `Qwen/Qwen2-VL-7B-Instruct`, LoRA `r=16`, `alpha=32`, `dropout=0.05`, `target_modules=[q_proj, v_proj]`, `task_type=CAUSAL_LM`.
+- Kích thước `msit/` sau dọn dẹp: ~40 MB (trước: ~138 MB).
+- Hai test fail còn lại (`test_parse_conclusion`, `test_cttd_builder_balanced`) là lỗi có sẵn từ commit `f2d64ce`, không liên quan dọn dẹp.
 
 ---
 
