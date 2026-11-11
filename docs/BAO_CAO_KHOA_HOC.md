@@ -1,12 +1,12 @@
 # BÁO CÁO KHOA HỌC MÔN HỌC
 
-*(Bản thảo chuẩn hóa theo cấu trúc IEEE — Sẵn sàng chuyển đổi sang LaTeX `IEEEtran`, giới hạn $\le 25$ trang, dung lượng $< 20\text{ MB}$)*
+*(Bản thảo chuẩn hóa theo cấu trúc IEEE — Đã hiệu đính thuật ngữ Tiếng Việt học thuật tự nhiên, sẵn sàng biên dịch LaTeX `IEEEtran`, giới hạn $\le 25$ trang, dung lượng $< 20\text{ MB}$)*
 
 ---
 
 **TIÊU ĐỀ BÁO CÁO:**
 
-# Khai thác Tri thức và Kiểm chứng Ngữ nghĩa Đa phương thức thông qua Suy luận Chuỗi Tư duy Có Cấu trúc và Học Biểu diễn Tương phản: Từ Khai thác Thuộc tính Sản phẩm Thế giới Mở đến Phát hiện Tin giả Đa phương thức
+# Khai phá Tri thức và Kiểm chứng Ngữ nghĩa Đa phương thức dựa trên Suy luận Chuỗi Tư duy Có Cấu trúc và Học Biểu diễn Tương phản: Từ Khai phá Thuộc tính Sản phẩm Thương mại Điện tử trong Môi trường Mở đến Phát hiện Tin giả Đa phương thức
 
 **Thông tin Học viên thực hiện (Định dạng tên file nộp: `MSHV1-MSHV2.pdf`):**
 
@@ -19,9 +19,9 @@
 
 ## TÓM TẮT (ABSTRACT)
 
-Sự bùng nổ của dữ liệu đa phương thức kết hợp giữa văn bản và hình ảnh trên các nền tảng trực tuyến đặt ra yêu cầu cấp thiết về việc xây dựng các hệ thống trí tuệ nhân tạo có khả năng thấu hiểu sâu sắc ngữ nghĩa liên phương thức. Tuy nhiên, các hệ thống hiện hành vẫn đối mặt với hai rào cản cốt lõi: (1) sự mất cân bằng và khai thác hời hợt thông tin thị giác khi kết hợp với văn bản, dẫn đến việc bỏ sót các chi tiết quan trọng hoặc không phát hiện được những mâu thuẫn ngữ nghĩa tinh vi; và (2) sự thiếu vắng một quy trình suy luận tường minh có kiểm soát trong các Mô hình Ngôn ngữ Lớn Đa phương thức (MLLM/LVLM), khiến mô hình dễ sinh ra ảo giác (*hallucination*) và kém bền vững trước dữ liệu nhiễu. Trong báo cáo này, nhóm chúng tôi thực hiện nghiên cứu chuyên sâu, phân tích phản biện và kết nối hai công trình tiêu biểu công bố năm 2025 nhằm giải quyết hai bài toán đại diện cho hai mặt đối lập nhưng bổ trợ lẫn nhau của xử lý thông tin đa phương thức: **Phần thứ nhất** tập trung vào bài toán *sinh và trích xuất tri thức mở* thông qua khung phương pháp **MSIT** (*Tinh chỉnh Chỉ dẫn Tự sửa lỗi Đa phương thức cho Khai thác Thuộc tính Sản phẩm Thương mại Điện tử Thế giới Mở* — ACL 2025), đồng thời trình bày toàn bộ quy trình nhóm tự tái lập thực nghiệm từ khâu kiến tạo dữ liệu, tinh chỉnh mô hình bằng kỹ thuật QLoRA đến suy luận ba giai đoạn. **Phần thứ hai** tập trung vào bài toán *kiểm chứng và phân loại tính xác thực* thông qua khung phương pháp **CMA-VRP** (*Căn chỉnh Đồ thị Thực thể và Suy luận Thị giác cho Phát hiện Tin giả Đa phương thức* — ACM MM 2025). Qua việc đặt hai công trình trong một lăng kính phân tích thống nhất, báo cáo làm rõ cách thức kết hợp giữa chiến lược tách biệt phương thức, suy luận chuỗi tư duy (Chain-of-Thought) phân rã theo bước, học tương phản (Contrastive Learning) và các cơ chế lọc nhiễu để kiến tạo nên các hệ thống đa phương thức đáng tin cậy.
+Sự bùng nổ của dữ liệu đa phương thức kết hợp giữa văn bản và hình ảnh trên các nền tảng trực tuyến đặt ra yêu cầu cấp thiết về việc xây dựng các hệ thống trí tuệ nhân tạo có khả năng thấu hiểu sâu sắc ngữ nghĩa liên phương thức. Tuy nhiên, các hệ thống hiện hành vẫn đối mặt với hai rào cản cốt lõi: (1) sự mất cân bằng và khai thác hời hợt thông tin thị giác khi kết hợp với văn bản, dẫn đến việc bỏ sót các chi tiết quan trọng hoặc không phát hiện được những mâu thuẫn ngữ nghĩa tinh vi; và (2) sự thiếu vắng một quy trình suy luận tường minh có kiểm soát trong các Mô hình Ngôn ngữ Lớn Đa phương thức (MLLM/LVLM), khiến mô hình dễ sinh ra ảo giác (*hallucination*) và kém bền vững trước dữ liệu nhiễu. Trong báo cáo này, nhóm chúng tôi thực hiện nghiên cứu chuyên sâu, phân tích phản biện và kết nối hai công trình tiêu biểu công bố năm 2025 nhằm giải quyết hai bài toán đại diện cho hai mặt đối lập nhưng bổ trợ lẫn nhau của xử lý thông tin đa phương thức: **Phần thứ nhất** tập trung vào bài toán *khai phá và trích xuất tri thức mở* thông qua phương pháp **MSIT** (*Khai phá thuộc tính sản phẩm thương mại điện tử trong môi trường mở bằng tinh chỉnh theo chỉ dẫn đa phương thức có khả năng tự hiệu chỉnh* — ACL 2025), đồng thời trình bày toàn bộ quy trình nhóm tự tái lập thực nghiệm từ khâu kiến tạo dữ liệu, tinh chỉnh mô hình bằng kỹ thuật QLoRA đến quy trình suy luận ba giai đoạn. **Phần thứ hai** tập trung vào bài toán *kiểm chứng và phân loại tính xác thực* thông qua phương pháp **CMA-VRP** (*Căn chỉnh đồ thị thực thể và suy luận thị giác cho phát hiện tin giả đa phương thức* — ACM MM 2025). Qua việc đặt hai công trình trong một lăng kính phân tích thống nhất, báo cáo làm rõ cách thức kết hợp giữa chiến lược tách biệt phương thức, suy luận chuỗi tư duy (Chain-of-Thought) phân rã theo bước, học tương phản (Contrastive Learning) và các cơ chế lọc nhiễu để kiến tạo nên các hệ thống đa phương thức có khả năng tự hiệu chỉnh và đáng tin cậy.
 
-**Từ khóa (Index Terms):** Trí tuệ nhân tạo đa phương thức, Mô hình ngôn ngữ lớn thị giác - ngôn ngữ, Suy luận chuỗi tư duy, Học tương phản, Khai thác thuộc tính thế giới mở, Phát hiện tin giả đa phương thức, Mạng nơ-ron đồ thị.
+**Từ khóa (Index Terms):** Trí tuệ nhân tạo đa phương thức, Mô hình ngôn ngữ lớn thị giác - ngôn ngữ, Suy luận chuỗi tư duy, Học tương phản, Khai phá thuộc tính trong môi trường mở, Tinh chỉnh theo chỉ dẫn có khả năng tự hiệu chỉnh, Phát hiện tin giả đa phương thức, Mạng nơ-ron đồ thị.
 
 ---
 
@@ -31,21 +31,21 @@ Trong kỷ nguyên số hóa hiện nay, thông tin trên môi trường mạng 
 
 Khi khảo sát các bài toán ứng dụng đa phương thức trong thực tiễn, chúng ta có thể nhìn nhận chúng dưới hai chiều hướng tác vụ cơ bản:
 
-1. **Chiều hướng Tổng hợp và Trích xuất Tri thức (Information Extraction & Synthesis):** Giả định rằng hình ảnh và văn bản của cùng một đối tượng bổ sung thông tin cho nhau. Mục tiêu của hệ thống là khai thác tối đa các tín hiệu từ cả hai kênh để trích xuất ra một tập hợp tri thức có cấu trúc đầy đủ nhất (điển hình là bài toán *Khai thác Thuộc tính Sản phẩm Thế giới Mở — Open-World Product Attribute Mining*).
-2. **Chiều hướng Kiểm chứng và Phát hiện Bất đồng (Cross-Modal Verification & Inconsistency Detection):** Giả định rằng giữa hình ảnh và văn bản có thể tồn tại sự mâu thuẫn ngầm hoặc nhiễu loạn cố ý nhằm đánh lừa người đọc. Mục tiêu của hệ thống là đối chiếu ngữ nghĩa chi tiết giữa các thực thể trong ảnh và trong câu chữ để phán đoán tính xác thực của thông tin (điển hình là bài toán *Phát hiện Tin giả Đa phương thức — Multimodal Fake News Detection*).
+1. **Chiều hướng Tổng hợp và Khai phá Tri thức (Knowledge Mining & Synthesis):** Giả định rằng hình ảnh và văn bản của cùng một đối tượng bổ sung thông tin cho nhau. Mục tiêu của hệ thống là khai thác tối đa các tín hiệu từ cả hai kênh để trích xuất ra một tập hợp tri thức có cấu trúc đầy đủ nhất (điển hình là bài toán *Khai phá thuộc tính sản phẩm thương mại điện tử trong môi trường mở — Open-World E-Commerce Product Attribute Mining*).
+2. **Chiều hướng Kiểm chứng và Phát hiện Bất đồng (Cross-Modal Verification & Inconsistency Detection):** Giả định rằng giữa hình ảnh và văn bản có thể tồn tại sự mâu thuẫn ngầm hoặc nhiễu loạn cố ý nhằm đánh lừa người đọc. Mục tiêu của hệ thống là đối chiếu ngữ nghĩa chi tiết giữa các thực thể trong ảnh và trong câu chữ để phán đoán tính xác thực của thông tin (điển hình là bài toán *Phát hiện tin giả đa phương thức — Multimodal Fake News Detection*).
 
 Mặc dù phục vụ hai mục đích ứng dụng khác nhau (thương mại điện tử và an toàn thông tin mạng xã hội), qua quá trình nghiên cứu, nhóm chúng tôi nhận thấy cả hai bài toán đều gặp phải **hai nút thắt phương pháp luận chung** chưa được giải quyết triệt để bởi các phương pháp truyền thống cũng như việc áp dụng trực tiếp các Mô hình Ngôn ngữ Lớn Đa phương thức (MLLM/LVLM):
 
 - **Nút thắt thứ nhất — Sự khai thác hời hợt ngữ nghĩa thị giác và hiện tượng thiên lệch phương thức (*Modality Bias & Shallow Visual Semantics*):**
-  Trong bài toán khai thác thuộc tính sản phẩm, các mô hình trước đây chủ yếu chỉ đọc tiêu đề và mô tả văn bản, bỏ qua hoàn toàn hình ảnh bao bì — nơi chứa đựng nhiều thuộc tính vật lý trực quan (như kiểu dáng, khối lượng tịnh in trên nhãn). Ngay cả khi đưa đồng thời cả ảnh và văn bản vào một mô hình lớn như GPT-4, sự chú ý của mô hình vẫn bị thiên lệch nặng về phía văn bản (*text-dominated attention bias*). Tương tự, trong bài toán phát hiện tin giả, các mạng thị giác cổ điển (như VGG hay ResNet) chỉ trích xuất được đặc trưng bề mặt (màu sắc, đường nét), trong khi các mô hình LVLM hiện đại lại thường chỉ nhìn bức tranh tổng thể mà bỏ sót các chi tiết cục bộ mang tính quyết định (chẳng hạn như nét mặt căng thẳng của người biểu tình hay dòng chữ phản đối nhỏ trên tấm biển cầm tay đi ngược lại nội dung bài viết).
+  Trong bài toán khai phá thuộc tính sản phẩm, các mô hình trước đây chủ yếu chỉ đọc tiêu đề và mô tả văn bản, bỏ qua hoàn toàn hình ảnh bao bì — nơi chứa đựng nhiều thuộc tính vật lý trực quan (như kiểu dáng, khối lượng tịnh in trên nhãn). Ngay cả khi đưa đồng thời cả ảnh và văn bản vào một mô hình lớn như GPT-4, sự chú ý của mô hình vẫn bị thiên lệch nặng về phía văn bản (*text-dominated attention bias*). Tương tự, trong bài toán phát hiện tin giả, các mạng thị giác cổ điển (như VGG hay ResNet) chỉ trích xuất được đặc trưng bề mặt (màu sắc, đường nét), trong khi các mô hình LVLM hiện đại lại thường chỉ nhìn bức tranh tổng thể mà bỏ sót các chi tiết cục bộ mang tính quyết định (chẳng hạn như nét mặt căng thẳng của người biểu tình hay dòng chữ phản đối nhỏ trên tấm biển cầm tay đi ngược lại nội dung bài viết).
 
 - **Nút thắt thứ hai — Thiếu vắng cơ chế suy luận có cấu trúc dẫn đến ảo giác (*Hallucination*) và dễ tổn thương trước nhiễu (*Noise Vulnerability*):**
   Khi yêu cầu các MLLM/LVLM sinh trực tiếp kết quả hoặc giải thích tự do (*Vanilla Chain-of-Thought*), mô hình rất dễ suy diễn quá đà, sinh ra các thuộc tính quảng cáo vô nghĩa hoặc nhận diện nhầm các đối tượng không có thật. Hơn nữa, dữ liệu thực tế luôn đi kèm nhiễu: từ các thuộc tính trùng lặp ngữ nghĩa trong thương mại điện tử cho đến ảnh độ phân giải thấp, ảnh bị chèn chữ đóng dấu (*watermark*) mang tính dẫn dắt hoặc các thẻ `#hashtag` rác trên mạng xã hội.
 
 Để giải quyết trọn vẹn hai nút thắt trên, báo cáo này đi sâu phân tích hai công trình nghiên cứu mới nhất đại diện cho hai hướng tiếp cận bổ trợ nhau:
 
-- **Phần A (Mục III — Bài báo Seminar & Tái lập thực nghiệm):** Nghiên cứu khung **MSIT** (*Multimodal Self-Correction Instruction Tuning*) của nhóm tác giả Jiaqi Li và cộng sự (ACL 2025) [1]. Công trình này giải quyết bài toán khai thác thuộc tính sản phẩm thế giới mở bằng cách tách biệt phương thức khi sinh dữ liệu học trong ngữ cảnh, kết hợp tinh chỉnh chỉ dẫn theo quy trình suy luận chuỗi tư duy 5 bước tương phản để mô hình tự sửa lỗi dương tính giả.
-- **Phần B (Mục IV — Bài báo Báo cáo mở rộng):** Nghiên cứu khung **CMA-VRP** (*Cross-Modal Alignment with Visual Reasoning Prompting*) của nhóm tác giả Guoyi Li và cộng sự (ACM MM 2025) [2]. Công trình này giải quyết bài toán phát hiện tin giả đa phương thức bằng cách xây dựng đồ thị thực thể cho từng phương thức, dùng cơ chế gợi ý suy luận thị giác 2 tầng hướng chân lý từ LLM/LVLM để dẫn dắt quá trình học tương phản đồ thị và học biểu diễn bất biến qua chu trình đối kháng.
+- **Phần A (Mục III — Bài báo Seminar & Tái lập thực nghiệm):** Nghiên cứu phương pháp **MSIT** (*Multimodal Self-Correction Instruction Tuning*) của nhóm tác giả Jiaqi Li và cộng sự (ACL 2025) [1]. Công trình này giải quyết bài toán *khai phá thuộc tính sản phẩm thương mại điện tử trong môi trường mở bằng tinh chỉnh theo chỉ dẫn đa phương thức có khả năng tự hiệu chỉnh*: tách biệt phương thức khi sinh dữ liệu học theo ngữ cảnh, kết hợp tinh chỉnh chỉ dẫn theo quy trình suy luận chuỗi tư duy 5 bước tương phản để mô hình tự hiệu chỉnh và loại bỏ các thuộc tính dương tính giả.
+- **Phần B (Mục IV — Bài báo Báo cáo mở rộng):** Nghiên cứu phương pháp **CMA-VRP** (*Cross-Modal Alignment with Visual Reasoning Prompting*) của nhóm tác giả Guoyi Li và cộng sự (ACM MM 2025) [2]. Công trình này giải quyết bài toán *phát hiện tin giả đa phương thức bằng căn chỉnh đồ thị thực thể và suy luận thị giác*: xây dựng đồ thị thực thể cho từng phương thức, dùng kỹ thuật gợi mở suy luận thị giác 2 tầng định hướng xác thực từ LLM/LVLM để dẫn dắt quá trình học tương phản đồ thị và học biểu diễn bất biến qua chu trình đối kháng.
 
 ```mermaid
 flowchart TD
@@ -53,11 +53,11 @@ flowchart TD
     Root --> C1["Thách thức 1: Thiên lệch phương thức &<br/>Bỏ sót ngữ nghĩa thị giác chi tiết"]
     Root --> C2["Thách thức 2: Ảo giác suy luận của MLLM/LVLM &<br/>Nhiễu dữ liệu thực tế"]
     
-    C1 & C2 --> P1["PHẦN I (Mục III): Khung phương pháp MSIT (ACL 2025)<br/>Bài toán: Khai thác Thuộc tính Sản phẩm Thế giới Mở"]
-    C1 & C2 --> P2["PHẦN II (Mục IV): Khung phương pháp CMA-VRP (ACM MM 2025)<br/>Bài toán: Phát hiện Tin giả Đa phương thức"]
+    C1 & C2 --> P1["PHẦN I (Mục III): Phương pháp MSIT (ACL 2025)<br/>Khai phá thuộc tính sản phẩm TMĐT trong môi trường mở"]
+    C1 & C2 --> P2["PHẦN II (Mục IV): Phương pháp CMA-VRP (ACM MM 2025)<br/>Phát hiện tin giả đa phương thức"]
     
-    P1 --> S1["Giải pháp cốt lõi của MSIT:<br/>1. Sinh dữ liệu ICL tách biệt Ảnh/Văn bản (AGTD)<br/>2. Tinh chỉnh CoT 5 bước tương phản Âm/Dương (CTTD)<br/>3. Suy luận 3 giai đoạn: Lọc từ đồng nghĩa Word2Vec + Tự sửa lỗi"]
-    P2 --> S2["Giải pháp cốt lõi của CMA-VRP:<br/>1. Đồ thị thực thể Văn bản/Thị giác + OCR + Suy luận VRP 2 tầng<br/>2. Học tương phản Liên đồ thị (làm mượt mềm) & Nội đồ thị<br/>3. Chu trình đối kháng Wasserstein + Bộ phân biệt kép JSD (ACCIL)"]
+    P1 --> S1["Giải pháp cốt lõi của MSIT:<br/>1. Sinh dữ liệu ICL tách biệt Ảnh/Văn bản (AGTD)<br/>2. Tinh chỉnh CoT 5 bước tương phản Âm/Dương (CTTD)<br/>3. Suy luận 3 giai đoạn: Lọc đồng nghĩa Word2Vec + Tự hiệu chỉnh"]
+    P2 --> S2["Giải pháp cốt lõi của CMA-VRP:<br/>1. Đồ thị thực thể Văn bản/Thị giác + OCR + Suy luận VRP 2 tầng<br/>2. Học tương phản Liên đồ thị (nhãn làm mượt) & Nội đồ thị<br/>3. Chu trình đối kháng Wasserstein + Bộ phân biệt kép JSD (ACCIL)"]
     
     S1 & S2 --> Syn["Mục V: Đối sánh Tổng hợp, Đánh giá Phản biện & Kết luận Chung"]
 ```
@@ -72,40 +72,40 @@ flowchart TD
 
 Nền tảng chung của cả hai bài báo dựa trên sự phát triển vượt bậc của các mô hình kết hợp thị giác và ngôn ngữ quy mô lớn. Thế hệ các mô hình như **BLIP-2** [3] đã mở ra hướng kết nối bộ mã hóa hình ảnh tiền huấn luyện đóng băng với mô hình ngôn ngữ lớn thông qua bộ biến đổi truy vấn gọn nhẹ (Q-Former). Tiếp nối thành công đó, **InstructBLIP** [4] và **LLaVA** [5] đưa kỹ thuật *tinh chỉnh theo chỉ dẫn thị giác (visual instruction tuning)* vào quá trình huấn luyện, giúp mô hình có khả năng tuân thủ các yêu cầu phức tạp của con người trên đầu vào đa phương thức. Các kiến trúc tiên tiến hơn như **Qwen-VL** [6], **InternLM-XComposer2** [7], **DeepSeek-VL** [8] và **GPT-4** [9] tiếp tục nâng cao năng lực đọc hiểu văn bản trong ảnh và suy luận liên phương thức.
 
-Tuy nhiên, việc thích nghi các mô hình hàng tỷ tham số này vào các bài toán chuyên biệt gặp hai thách thức: chi phí tính toán khổng lồ nếu cập nhật toàn bộ trọng số, và nguy cơ suy giảm khả năng tổng quát hóa (hoặc sinh ảo giác) khi tinh chỉnh trực tiếp trên tập dữ liệu hẹp. Do đó, kỹ thuật **Thích nghi Hạng thấp (Low-Rank Adaptation — LoRA)** (được áp dụng trong MSIT để đóng băng mạng xương sống và chỉ huấn luyện các ma trận phân rã hạng thấp) hoặc kỹ thuật **Gợi ý Suy luận Không tinh chỉnh (Zero-shot/Prompt-based Reasoning)** (được áp dụng trong CMA-VRP với Mistral-7B và LLaVA-1.6-13B) trở thành hai chiến lược trọng tâm được hai nhóm tác giả lựa chọn.
+Tuy nhiên, việc thích nghi các mô hình hàng tỷ tham số này vào các bài toán chuyên biệt gặp hai thách thức: chi phí tính toán khổng lồ nếu cập nhật toàn bộ trọng số, và nguy cơ suy giảm khả năng tổng quát hóa (hoặc sinh ảo giác) khi tinh chỉnh trực tiếp trên tập dữ liệu hẹp. Do đó, kỹ thuật **Thích nghi Hạng thấp (Low-Rank Adaptation — LoRA)** (được áp dụng trong MSIT để đóng băng mạng xương sống và chỉ huấn luyện các ma trận phân rã hạng thấp) hoặc kỹ thuật **Gợi mở Suy luận Không tinh chỉnh (Zero-shot/Prompt-based Reasoning)** (được áp dụng trong CMA-VRP với Mistral-7B và LLaVA-1.6-13B) trở thành hai chiến lược trọng tâm được hai nhóm tác giả lựa chọn.
 
 ### 2.2. Suy luận Chuỗi Tư duy (Chain-of-Thought — CoT) Đa phương thức
 
 Kỹ thuật Chuỗi tư duy (CoT) giúp mô hình ngôn ngữ chia nhỏ một bài toán phức tạp thành các bước suy luận trung gian. Dù vậy, các nghiên cứu gần đây về CoT đa phương thức [10] chỉ ra rằng nếu để mô hình tự do sinh chuỗi lý giải mà không có khung kiểm soát (*unstructured/vanilla CoT*), mô hình rất dễ bịa đặt ra các lập luận nghe có vẻ hợp lý nhưng sai lệch với thực tế hình ảnh (*hallucinated rationales*). Cả hai bài báo trong báo cáo này đều khắc phục nhược điểm đó bằng cách **ép buộc quá trình CoT phải đi theo các bước kiểm chứng có cấu trúc chặt chẽ**, bám sát vào từng thực thể hoặc từng kênh thông tin cụ thể.
 
-### 2.3. Lược sử Bài toán Khai thác Thuộc tính Sản phẩm và Phát hiện Tin giả Đa phương thức
+### 2.3. Lược sử Bài toán Khai phá Thuộc tính Sản phẩm và Phát hiện Tin giả Đa phương thức
 
-- **Đối với bài toán Khai thác Thuộc tính Sản phẩm (Attribute Mining):** Các nghiên cứu ban đầu như **OpenTag** [11] hay **CMA-CLIP** [12] đóng khung bài toán dưới dạng gán nhãn chuỗi hoặc phân loại trong một tập thuộc tính cố định (*closed-world*). Để mở rộng sang *thế giới mở (open-world)* — nơi các thuộc tính mới liên tục xuất hiện — các phương pháp như **OA-Mine** [13] (dùng phân cụm kết hợp bộ phân loại siêu dữ liệu) và **Amacer** [14] (dùng mô hình sinh kèm điều chuẩn tự giám sát) đã được đề xuất. Tuy nhiên, cả OA-Mine và Amacer đều bỏ qua kênh hình ảnh sản phẩm và thiếu cơ chế tự thẩm định lại kết quả sinh ra.
+- **Đối với bài toán Khai phá Thuộc tính Sản phẩm (Product Attribute Mining):** Các nghiên cứu ban đầu như **OpenTag** [11] hay **CMA-CLIP** [12] đóng khung bài toán dưới dạng gán nhãn chuỗi hoặc phân loại trong một tập thuộc tính cố định (*môi trường đóng — closed-world*). Để mở rộng sang *môi trường mở (open-world)* — nơi các thuộc tính mới liên tục xuất hiện — các phương pháp như **OA-Mine** [13] (dùng phân cụm kết hợp bộ phân loại siêu dữ liệu) và **Amacer** [14] (dùng mô hình sinh kèm điều chuẩn tự giám sát) đã được đề xuất. Tuy nhiên, cả OA-Mine và Amacer đều bỏ qua kênh hình ảnh sản phẩm và thiếu cơ chế tự hiệu chỉnh lại kết quả sinh ra.
 - **Đối với bài toán Phát hiện Tin giả Đa phương thức (Multimodal Fake News Detection):** Các hướng tiếp cận trước đây chia thành ba nhánh chính: (i) *Nhánh căn chỉnh và dung hợp đặc trưng sâu* như **MVAE** [15], **CAFE** [16], **CFFN** [17] và **COOLANT** [18] (sử dụng học tương phản toàn cục giữa ảnh và chữ); (ii) *Nhánh dựa trên thực thể và sự kiện* như **InfoSurgeon** [19], **EM-FEND** [20] và **Event-Radar** [21]; và (iii) *Nhánh ứng dụng LVLM* như **NLIN** [22] hay **SNIFFER** [23]. Hạn chế chung của các nhánh này là chưa kết hợp được khả năng suy luận ngữ nghĩa sâu của LLM/LVLM vào cấu trúc đồ thị thực thể chi tiết, đồng thời dễ bị suy giảm hiệu năng khi gặp dữ liệu mạng xã hội chứa nhiễu hoặc các thực thể không bắt cặp tường minh.
 
 ---
 
-## III. KHAI THÁC THUỘC TÍNH SẢN PHẨM ĐA PHƯƠNG THỨC THẾ GIỚI MỞ VỚI CƠ CHẾ TỰ SỬA LỖI (BÀI BÁO 1 — MSIT)
+## III. KHAI PHÁ THUỘC TÍNH SẢN PHẨM THƯƠNG MẠI ĐIỆN TỬ TRONG MÔI TRƯỜNG MỞ BẰNG TINH CHỈNH THEO CHỈ DẪN ĐA PHƯƠNG THỨC CÓ KHẢ NĂNG TỰ HIỆU CHỈNH (BÀI BÁO 1 — MSIT)
 
 ### 3.1. Phát biểu Bài toán dưới Góc nhìn Toán học
 
-Trong bài toán Khai thác Thuộc tính Sản phẩm Thương mại Điện tử Thế giới Mở Đa phương thức, mỗi sản phẩm thứ $i$, ký hiệu là $\mathcal{P}_i$, được mô tả bởi hai nguồn dữ liệu đầu vào:
+Trong bài toán Khai phá Thuộc tính Sản phẩm Thương mại Điện tử trong Môi trường Mở Đa phương thức, mỗi sản phẩm thứ $i$, ký hiệu là $\mathcal{P}_i$, được mô tả bởi hai nguồn dữ liệu đầu vào:
 
 1. **Thông tin văn bản $\mathcal{T}_i$:** Bao gồm tiêu đề sản phẩm (*title*) và các gạch đầu dòng mô tả đặc điểm nổi bật (*bullet points*), được biểu diễn dưới dạng một chuỗi gồm $w_i$ từ (token):
    $$\mathcal{T}_i = \left\{s_1^i, s_2^i, \dots, s_{w_i}^i\right\}$$
 2. **Thông tin thị giác $\mathcal{I}_i$:** Hình ảnh chụp sản phẩm hoặc bao bì sản phẩm.
 
-Mục tiêu của mô hình là tự động khám phá và trích xuất một tập hợp gồm $k$ thuộc tính phù hợp $\mathcal{A}_i = \{a_1, a_2, \dots, a_k\}$ cùng tập giá trị tương ứng của chúng $\mathcal{V}_i = \{v_1, v_2, \dots, v_k\}$. Điểm cốt lõi của thiết lập **Thế giới Mở (*Open-World*)** là số lượng thuộc tính $k$ cũng như tên gọi của các thuộc tính $a_m$ không bị giới hạn bởi bất kỳ từ điển hay lược đồ (*schema*) cố định nào cho trước. Thay vì giải bài toán như một bộ phân loại, MSIT sử dụng mô hình MLLM sinh tuần tự một chuỗi văn bản có cấu trúc thống nhất dưới dạng từ điển JSON:
+Mục tiêu của mô hình là tự động khám phá và trích xuất một tập hợp gồm $k$ thuộc tính phù hợp $\mathcal{A}_i = \{a_1, a_2, \dots, a_k\}$ cùng tập giá trị tương ứng của chúng $\mathcal{V}_i = \{v_1, v_2, \dots, v_k\}$. Điểm cốt lõi của thiết lập **Môi trường Mở (*Open-World*)** là số lượng thuộc tính $k$ cũng như tên gọi của các thuộc tính $a_m$ không bị giới hạn bởi bất kỳ từ điển hay lược đồ (*schema*) cố định nào cho trước. Thay vì giải bài toán như một bộ phân loại, MSIT sử dụng mô hình MLLM sinh tuần tự một chuỗi văn bản có cấu trúc thống nhất dưới dạng từ điển JSON:
 $$\{a_1 : v_1, a_2 : v_2, \dots, a_k : v_k\}$$
 
 ### 3.2. Phân tích Chi tiết Kiến trúc và Phương pháp MSIT
 
-Để khắc phục đồng thời sự thiếu hụt thông tin thị giác và hiện tượng sinh thuộc tính rác do thiếu suy luận, nhóm tác giả thiết kế khung **MSIT** gồm ba trụ cột chính: (1) Xây dựng tập dữ liệu tinh chỉnh sinh thuộc tính (**AGTD**); (2) Xây dựng tập dữ liệu tinh chỉnh chuỗi tư duy (**CTTD**); và (3) Huấn luyện mô hình với LoRA kết hợp quy trình suy luận 3 giai đoạn.
+Để khắc phục đồng thời sự thiếu hụt thông tin thị giác và hiện tượng sinh thuộc tính sai lệch do thiếu suy luận, nhóm tác giả thiết kế khung **MSIT** gồm ba trụ cột chính: (1) Xây dựng tập dữ liệu tinh chỉnh tác vụ sinh thuộc tính (**AGTD**); (2) Xây dựng tập dữ liệu tinh chỉnh suy luận chuỗi tư duy (**CTTD**); và (3) Huấn luyện mô hình với LoRA kết hợp quy trình suy luận 3 giai đoạn có khả năng tự hiệu chỉnh.
 
 ```mermaid
 flowchart LR
     subgraph Phase1["1. Kiến tạo dữ liệu AGTD (Tách biệt phương thức)"]
-        Seed["Tập hạt giống<br/>(Seed Attributes)"] --> GPT4_T["GPT-4 ICL<br/>Chỉ đọc Văn bản"]
+        Seed["Tập thuộc tính khởi tạo<br/>(Seed Attributes)"] --> GPT4_T["GPT-4 ICL<br/>Chỉ đọc Văn bản"]
         Seed --> GPT4_I["GPT-4 ICL<br/>Chỉ đọc Hình ảnh"]
         T_in["Văn bản SP"] --> GPT4_T --> Rev1["Duyệt thủ công"]
         I_in["Hình ảnh SP"] --> GPT4_I --> Rev1
@@ -120,63 +120,63 @@ flowchart LR
     Phase1 & Phase2 --> LoRA["Tinh chỉnh MLLM bằng LoRA<br/>(LLaVA-7B / Qwen-VL / InternLM)"]
 
     subgraph Phase3["3. Quy trình Suy luận 3 Giai đoạn (3-Stage Inference)"]
-        LoRA --> S1["Giai đoạn 1 (S1):<br/>Sinh thuộc tính theo lô"]
+        LoRA --> S1["Giai đoạn 1 (S1):<br/>Sinh thuộc tính hàng loạt"]
         S1 --> S2["Giai đoạn 2 (S2):<br/>Lọc trùng lặp (Word2Vec + 3 Luật)"]
-        S2 --> S3["Giai đoạn 3 (S3):<br/>Kiểm chứng tuần tự bằng CoT 5 bước"]
-        S3 --> Out["Tập cặp {Thuộc tính : Giá trị}<br/>đã tự sửa lỗi (Giữ lại nếu Bước 5 = Yes)"]
+        S2 --> S3["Giai đoạn 3 (S3):<br/>Thẩm định tuần tự bằng CoT 5 bước"]
+        S3 --> Out["Tập cặp {Thuộc tính : Giá trị}<br/>đã tự hiệu chỉnh (Giữ lại nếu Bước 5 = Yes)"]
     end
 ```
 
-*Hình 2: Sơ đồ luồng hoạt động tổng thể của khung phương pháp MSIT được nhóm trực quan hóa lại từ kiến trúc của bài báo.*
+*Hình 2: Sơ đồ luồng hoạt động tổng thể của phương pháp MSIT được nhóm trực quan hóa lại từ kiến trúc của bài báo.*
 
 #### 3.2.1. Chiến lược Tách biệt Phương thức trong Xây dựng Dữ liệu AGTD
 
-Khi mở rộng hai bộ dữ liệu gốc đơn phương thức là **WOAM** và **OAMine** sang đa phương thức bằng cách thu thập ảnh sản phẩm từ Amazon.com, nhóm tác giả cần tạo ra dữ liệu chỉ dẫn chất lượng cao để dạy MLLM kỹ năng trích xuất cặp `thuộc tính : giá trị`. Một tập dữ liệu hạt giống (*Seed Dataset*) nhỏ được gán nhãn thủ công cho từng ngành hàng nhằm làm mẫu cho kỹ thuật Học trong ngữ cảnh (*In-Context Learning — ICL*) trên mô hình GPT-4.
+Khi mở rộng hai bộ dữ liệu gốc đơn phương thức là **WOAM** và **OAMine** sang đa phương thức bằng cách thu thập ảnh sản phẩm từ Amazon.com, nhóm tác giả cần tạo ra dữ liệu chỉ dẫn chất lượng cao để dạy MLLM kỹ năng trích xuất cặp `thuộc tính : giá trị`. Một tập dữ liệu mồi (*Seed Dataset*) nhỏ được gán nhãn thủ công cho từng ngành hàng nhằm làm mẫu cho kỹ thuật Học theo ngữ cảnh (*In-Context Learning — ICL*) trên mô hình GPT-4.
 
 Một phát hiện thực nghiệm rất đáng chú ý của tác giả là: nếu cung cấp đồng thời cả hình ảnh $\mathcal{I}_i$ và văn bản $\mathcal{T}_i$ vào cùng một câu lệnh cho GPT-4, cơ chế chú ý của GPT-4 sẽ bị thiên lệch mạnh về phía văn bản (do văn bản đã ở sẵn dạng token ngôn ngữ dễ trích xuất), dẫn đến việc bỏ sót các thuộc tính chỉ xuất hiện trên ảnh. Để triệt tiêu **thiên lệch chú ý phương thức (*modality attention bias*)** này, quy trình xây dựng AGTD được thực hiện theo 4 bước:
 
 1. **Trích xuất độc lập từ văn bản:** Đưa riêng tiêu đề và mô tả sản phẩm cùng 4 ví dụ mẫu ICL (thuộc 4 ngành hàng: Sofa, Trà, Vitamin, Ốp lưng điện thoại) vào GPT-4 để trích xuất tập thuộc tính văn bản.
 2. **Trích xuất độc lập từ hình ảnh:** Đưa riêng ảnh sản phẩm cùng ví dụ ICL vào GPT-4 để buộc mô hình phải quan sát kỹ các chi tiết thị giác và chữ in trên bao bì nhằm trích xuất tập thuộc tính hình ảnh.
 3. **Kiểm duyệt thủ công (*Manual Review*):** Lọc bỏ các thuộc tính không chính xác từ cả hai nguồn.
-4. **Hợp nhất đa phương thức (*Merging*):** Sử dụng GPT-4 với một câu lệnh chuyên biệt để gộp hai tập thuộc tính từ ảnh và văn bản thành một cấu trúc JSON duy nhất, gộp các thuộc tính trùng tên và làm mịn các thuộc tính quá chung chung (như `Features`) thành thuộc tính cụ thể.
+4. **Hợp nhất đa phương thức (*Merging*):** Sử dụng GPT-4 với một câu lệnh chuyên biệt để gộp hai tập thuộc tính từ ảnh và văn bản thành một cấu trúc JSON duy nhất, gộp các thuộc tính trùng tên và chi tiết hóa các thuộc tính quá chung chung (như `Features`) thành thuộc tính cụ thể.
 
 #### 3.2.2. Chuỗi Tư duy 5 Bước Có Cấu trúc và Lấy mẫu Tương phản trong CTTD
 
-Nếu chỉ huấn luyện trên AGTD, MLLM mới chỉ học được cách "liệt kê" thuộc tính mà chưa có khả năng tự phản biện xem thuộc tính đó có thực sự hợp lý hay không. Tuy nhiên, nếu dùng CoT tự do (*vanilla CoT*), mô hình lại dễ tự bịa ra lý do sai lệch. Do đó, nhóm tác giả thiết kế tập dữ liệu **CTTD** ép buộc mô hình suy luận tuần tự qua **5 bước kiểm chứng chặt chẽ** cho mỗi thuộc tính ứng viên $a_m$:
+Nếu chỉ huấn luyện trên AGTD, MLLM mới chỉ học được cách "liệt kê" thuộc tính mà chưa có khả năng tự hiệu chỉnh xem thuộc tính đó có thực sự hợp lý hay không. Tuy nhiên, nếu dùng CoT tự do (*vanilla CoT*), mô hình lại dễ tự bịa ra lý do sai lệch. Do đó, nhóm tác giả thiết kế tập dữ liệu **CTTD** ép buộc mô hình suy luận tuần tự qua **5 bước thẩm định chặt chẽ** cho mỗi thuộc tính ứng viên $a_m$:
 
-- **Bước 1 (Xác định và thu hẹp loại sản phẩm):** Quan sát cả ảnh và văn bản để định danh chính xác sản phẩm thuộc danh mục nào (ví dụ: thực phẩm chức năng, trà túi lọc hay ốp điện thoại), từ đó giới hạn không gian thuộc tính hợp lệ.
+- **Bước 1 (Xác định và thu hẹp phạm vi loại sản phẩm):** Quan sát cả ảnh và văn bản để định danh chính xác sản phẩm thuộc danh mục nào (ví dụ: thực phẩm chức năng, trà túi lọc hay ốp điện thoại), từ đó giới hạn không gian thuộc tính hợp lệ.
 - **Bước 2 (Sàng lọc sơ bộ bằng tri thức thông thường nội tại):** Phân tích ý nghĩa của tên thuộc tính $a_m$. Nếu tên thuộc tính tối nghĩa hoặc vô lý khi ghép với loại sản phẩm ở Bước 1 theo lẽ thường (chẳng hạn thuộc tính `kích thước màn hình` áp dụng cho `viên uống vitamin`), lập tức đánh giá sơ bộ là không phù hợp. Ngược lại, giải thích vì sao thuộc tính này có lý với loại sản phẩm đó.
-- **Bước 3 (Kiểm chứng bằng chứng trên hình ảnh):** Nếu Bước 2 đánh giá là có khả năng phù hợp, mô hình đối chiếu với hình ảnh sản phẩm để ước lượng một giá trị thuộc tính tương đối (*rough value*) nhằm xác nhận sự tồn tại của thuộc tính trên ảnh.
-- **Bước 4 (Kiểm chứng và trích xuất chính xác từ văn bản):** Tiếp tục đối chiếu với tiêu đề và mô tả văn bản. Nếu văn bản có chứa thông tin về thuộc tính, mô hình phải chỉ ra giá trị chính xác (*exact value*).
+- **Bước 3 (Xác thực thuộc tính dựa trên hình ảnh):** Nếu Bước 2 đánh giá là có khả năng phù hợp, mô hình đối chiếu với hình ảnh sản phẩm để ước lượng một giá trị thuộc tính tương đối (*rough value*) nhằm xác nhận sự hiện diện của thuộc tính trên ảnh.
+- **Bước 4 (Xác minh và trích xuất chính xác từ văn bản):** Tiếp tục đối chiếu với tiêu đề và mô tả văn bản. Nếu văn bản có chứa thông tin về thuộc tính, mô hình phải chỉ ra giá trị chính xác (*exact value*).
 - **Bước 5 (Tổng hợp và ra quyết định nhị phân):** Đúc kết bằng chứng từ 4 bước trên để đưa ra kết luận cuối cùng ở đoạn văn cuối bằng một từ duy nhất: **`yes`** (hợp lệ) hoặc **`no`** (không hợp lệ).
 
 **Cơ chế Học Tương phản trong CTTD (*Contrastive CoT*):** Bởi vì mọi thuộc tính lấy từ AGTD đều là thuộc tính đúng của sản phẩm, nếu chỉ tạo dữ liệu CoT từ chúng thì nhãn ở Bước 5 sẽ luôn là `yes`, khiến mô hình bị quá khớp (*overfitting*) và mất khả năng từ chối thuộc tính sai. Để giải quyết vấn đề này, nhóm tác giả lấy các thuộc tính của các ngành hàng khác làm **mẫu âm (*negative samples*, nhãn `no`)**, kiểm duyệt thủ công và thiết lập tỷ lệ **cân bằng 1:1 giữa mẫu dương và mẫu âm** trong tập CTTD.
 
 #### 3.2.3. Tinh chỉnh Mô hình với LoRA và Quy trình Suy luận 3 Giai đoạn
 
-Tập dữ liệu hợp nhất $\mathcal{D} = \text{AGTD} \cup \text{CTTD}$ được dùng để tinh chỉnh ba kiến trúc MLLM 7 tỷ tham số (**LLaVA-7B**, **Qwen-VL**, và **InternLM-XComposer2-7B**) thông qua phương pháp **LoRA**. Toàn bộ trọng số gốc của MLLM được đóng băng, chỉ cập nhật các tham số phân rã hạng thấp $\hat{\theta}$ путем cực tiểu hóa hàm mất mát tự hồi quy tiêu chuẩn (Công thức 1 trong bài báo):
+Tập dữ liệu hợp nhất $\mathcal{D} = \text{AGTD} \cup \text{CTTD}$ được dùng để tinh chỉnh ba kiến trúc MLLM 7 tỷ tham số (**LLaVA-7B**, **Qwen-VL**, và **InternLM-XComposer2-7B**) thông qua phương pháp **LoRA**. Toàn bộ trọng số gốc của MLLM được đóng băng, chỉ cập nhật các tham số phân rã hạng thấp $\hat{\theta}$ thông qua việc cực tiểu hóa hàm mất mát tự hồi quy tiêu chuẩn (Công thức 1 trong bài báo):
 $$\arg\min_{\hat{\theta}} \mathbb{E}_{(\mathcal{I}_i, \mathcal{T}_i) \in \mathcal{D}} \left[ \sum_{s=1}^{s_j} \log P_{\mathcal{M}_{\hat{\theta}}} \left( s_w^i \mid \mathcal{I}_i, s_1^i, \dots, s_{w-1}^i \right) \right] \quad (1)$$
 
 Sau khi huấn luyện, quá trình suy luận trên sản phẩm mới diễn ra qua **3 giai đoạn nối tiếp**:
 
-1. **Giai đoạn 1 — Sinh thuộc tính theo lô (*Batch Attribute Generation*):** Sử dụng 1 trong 10 mẫu câu lệnh chỉ dẫn tương đương ngữ nghĩa để yêu cầu MLLM đã tinh chỉnh sinh ra toàn bộ các cặp `{thuộc tính : giá trị}` tiềm năng dưới dạng JSON trong một lần gọi.
-2. **Giai đoạn 2 — Lọc thuộc tính trùng lặp dựa trên Word2Vec và 3 quy tắc độ dài từ con (*Filtering Repeated Attributes*):**
-   Trong quá trình sinh theo lô, mô hình thường sinh ra các tên thuộc tính trùng lặp về mặt ý nghĩa (ví dụ: `"type"` và `"product_type"`, hay `"brand"` và `"product_brand"`). Để giảm số lần phải chạy CoT ở Giai đoạn 3 và tăng độ chính xác, nhóm tác giả tách mỗi tên thuộc tính thành các từ con (*subwords*) và dùng mô hình nhúng từ **`word2vec-google-news-300`** để tính độ tương đồng cosine giữa các từ con. Hai tên thuộc tính được coi là **đồng nghĩa (*synonyms*)** nếu các từ con của chúng tương ứng **một-đối-một (*one-to-one*)** vượt qua ngưỡng tương đồng (trong đó cụm chỉ có 1 từ con phải chịu một ngưỡng khắt khe hơn để tránh khớp nhầm). Khi phát hiện hai thuộc tính $A$ và $B$ đồng nghĩa, hệ thống quyết định xóa một thuộc tính theo **3 quy tắc dựa trên số lượng từ con** (với giả định $|A| \le |B|$):
+1. **Giai đoạn 1 — Sinh thuộc tính hàng loạt (*Batch Attribute Generation*):** Sử dụng 1 trong 10 mẫu câu lệnh chỉ dẫn tương đương ngữ nghĩa để yêu cầu MLLM đã tinh chỉnh sinh ra toàn bộ các cặp `{thuộc tính : giá trị}` tiềm năng của sản phẩm dưới dạng JSON trong một lần gọi.
+2. **Giai đoạn 2 — Lọc thuộc tính trùng lặp ngữ nghĩa dựa trên Word2Vec và 3 quy tắc độ dài từ con (*Filtering Repeated Attributes*):**
+   Trong quá trình sinh hàng loạt, mô hình thường sinh ra các tên thuộc tính trùng lặp về mặt ý nghĩa (ví dụ: `"type"` và `"product_type"`, hay `"brand"` và `"product_brand"`). Để giảm số lần phải chạy CoT ở Giai đoạn 3 và tăng độ chính xác, nhóm tác giả tách mỗi tên thuộc tính thành các từ con (*subwords*) và dùng mô hình nhúng từ **`word2vec-google-news-300`** để tính độ tương đồng cosine giữa các từ con. Hai tên thuộc tính được coi là **đồng nghĩa (*synonyms*)** nếu các từ con của chúng tương ứng **một-đối-một (*one-to-one*)** vượt qua ngưỡng tương đồng (trong đó cụm chỉ có 1 từ con phải chịu một ngưỡng khắt khe hơn để tránh khớp nhầm). Khi phát hiện hai thuộc tính $A$ và $B$ đồng nghĩa, hệ thống quyết định xóa một thuộc tính theo **3 quy tắc dựa trên số lượng từ con** (với giả định $|A| \le |B|$):
    - **Quy tắc 1:** Nếu $|A| = 1$ (chỉ có 1 từ con), xét độ dài của $B$: nếu $|B| = 3$ thì **xóa $A$** (giữ cụm 3 từ con vì mang nghĩa cụ thể hơn cụm 1 từ đơn); nhưng nếu $|B| > 3$ thì **xóa $B$** (vì cụm quá 3 từ thường dài dòng, nhiễu).
    - **Quy tắc 2:** Nếu $|A| = 2$ và $|B| \ge 3$ thì **xóa $B$** (ưu tiên cụm 2 từ con cô đọng).
    - **Quy tắc 3:** Nếu $|A| = |B|$ (cùng số lượng từ con) thì **chọn ngẫu nhiên một trong hai để xóa**.
-3. **Giai đoạn 3 — Kiểm chứng tuần tự bằng CoT 5 bước (*Sequential Attribute Inference with 5-step CoT*):**
-   Từng thuộc tính còn sót lại sau Giai đoạn 2 được đưa lần lượt vào MLLM kèm theo 1 trong 5 mẫu câu lệnh yêu cầu suy luận 5 bước. Thuộc tính chỉ được giữ lại trong kết quả cuối cùng nếu Bước 5 kết luận là **`yes`**, qua đó tự động loại bỏ các thuộc tính dương tính giả.
+3. **Giai đoạn 3 — Thẩm định tuần tự từng thuộc tính bằng CoT 5 bước (*Sequential Attribute Inference with 5-step CoT*):**
+   Từng thuộc tính còn lại sau Giai đoạn 2 được đưa lần lượt vào MLLM kèm theo 1 trong 5 mẫu câu lệnh yêu cầu suy luận 5 bước. Thuộc tính chỉ được giữ lại trong kết quả cuối cùng nếu Bước 5 kết luận là **`yes`**, qua đó giúp mô hình tự hiệu chỉnh và loại bỏ các thuộc tính dương tính giả.
 
 ---
 
 ### 3.3. Phân tích Kết quả Thực nghiệm trong Bài báo Gốc
 
-Nhóm tác giả đánh giá MSIT trên hai bộ dữ liệu đa phương thức mở rộng từ **WOAM** (4 ngành hàng: *Tea, Vitamin, Sofa, Phone Case*, hơn 9.000 mô tả/ngành hàng) và **OAMine** (100 ngành hàng, 1.943 sản phẩm kiểm thử gán nhãn thủ công trên 10 ngành hàng), sử dụng **1.000 mẫu AGTD + 300 mẫu CTTD** cho huấn luyện và **1.000 mẫu** cho kiểm thử. Mô hình được huấn luyện 10 epochs bằng bộ tối ưu Adam ($\text{lr} = 3 \times 10^{-4}$) trên 1 GPU Tesla A100, giải mã với $\text{temperature} = 0.2, \text{top\_p} = 0.7$ và lấy trung bình qua 5 lần chạy độc lập. Hai độ đo được sử dụng là **Độ chính xác (Precision)** và **Độ phủ (Recall)** dưới hai chế độ: **Khớp chính xác (Exact Match)** và **Khớp tương đồng (Similar Match — chấp nhận từ đồng nghĩa)**.
+Nhóm tác giả đánh giá MSIT trên hai bộ dữ liệu đa phương thức mở rộng từ **WOAM** (4 ngành hàng: *Tea, Vitamin, Sofa, Phone Case*, hơn 9.000 mô tả/ngành hàng) và **OAMine** (100 ngành hàng, 1.943 sản phẩm kiểm thử gán nhãn thủ công trên 10 ngành hàng), sử dụng **1.000 mẫu AGTD + 300 mẫu CTTD** cho huấn luyện và **1.000 mẫu** cho kiểm thử. Mô hình được huấn luyện 10 epochs bằng bộ tối ưu Adam ($\text{lr} = 3 \times 10^{-4}$) trên 1 GPU Tesla A100, giải mã với $\text{temperature} = 0.2, \text{top\_p} = 0.7$ và lấy trung bình qua 5 lần chạy độc lập. Hai độ đo được sử dụng là **Độ chính xác (Precision)** và **Độ phủ (Recall)** dưới hai chế độ: **So khớp chính xác tuyệt đối (Exact Match)** và **So khớp tương đồng ngữ nghĩa (Similar Match — chấp nhận từ đồng nghĩa)**.
 
-#### Bảng 1: Tổng hợp kết quả so sánh hiệu năng trên tập dữ liệu WOAM và OAMine (Đơn vị: %)
+#### Bảng 1: Tổng hợp kết quả so sánh hiệu năng khai phá thuộc tính trên tập dữ liệu WOAM và OAMine (Đơn vị: %)
 
-| Mô hình đối sánh | WOAM Khớp tương đồng (P / R) | WOAM Khớp chính xác (P / R) | OAMine Khớp tương đồng (P / R) | OAMine Khớp chính xác (P / R) |
+| Mô hình đối sánh | WOAM So khớp tương đồng (P / R) | WOAM So khớp chính xác (P / R) | OAMine So khớp tương đồng (P / R) | OAMine So khớp chính xác (P / R) |
 | :--- | :---: | :---: | :---: | :---: |
 | VisualGLM-6B | $40.32 \pm 1.24$ / $5.25 \pm 0.11$ | $17.80 \pm 0.65$ / $2.83 \pm 0.34$ | $44.12 \pm 0.28$ / $18.98 \pm 0.27$ | $17.46 \pm 0.89$ / $9.38 \pm 0.00$ |
 | InstructBLIP-Vicuna-7B | $39.79 \pm 0.58$ / $6.62 \pm 0.00$ | $13.87 \pm 3.18$ / $2.75 \pm 0.23$ | $40.16 \pm 0.23$ / $19.78 \pm 0.30$ | $19.78 \pm 0.30$ / $5.76 \pm 0.05$ |
@@ -192,23 +192,23 @@ Nhóm tác giả đánh giá MSIT trên hai bộ dữ liệu đa phương thức
 | **MSIT (InternLM)** | $63.40 \pm 0.34$ / $46.80 \pm 0.34$ | $25.00 \pm 0.26$ / $25.53 \pm 0.23$ | $70.79 \pm 0.28$ / $46.99 \pm 0.13$ | $37.52 \pm 0.09$ / $27.37 \pm 0.05$ |
 | **MSIT (LLaVA-7B)** | **$66.90 \pm 0.53$** / **$66.99 \pm 2.13$** | **$35.34 \pm 2.71$** / **$52.50 \pm 3.93$** | **$74.50 \pm 0.17$** / **$63.06 \pm 0.45$** | **$54.33 \pm 0.45$** / **$51.54 \pm 0.05$** |
 
-**Các luận điểm phân tích sâu từ kết quả thực nghiệm và nghiên cứu cắt bỏ:**
+**Các luận điểm phân tích sâu từ kết quả thực nghiệm và khảo sát cắt bỏ thành phần (Ablation Study):**
 
-1. **Sự bứt phá nhờ tinh chỉnh chỉ dẫn đa phương thức:** Khi áp dụng khung MSIT lên cả 3 mô hình nền (Qwen-VL, InternLM, LLaVA-7B), hiệu năng đều tăng vọt so với phiên bản gốc chưa tinh chỉnh. Đáng chú ý nhất, `MSIT (LLaVA-7B)` nâng Độ chính xác Khớp chính xác (Exact Match Precision) trên WOAM từ **10,61% lên 35,34%** (gấp hơn 3,3 lần) và trên OAMine từ **16,71% lên 54,33%**, vượt xa cả mô hình thương mại khổng lồ **GPT-4** (15,51% trên WOAM và 29,25% trên OAMine) cũng như hai phương pháp đơn phương thức chuyên biệt là **OA-Mine** và **Amacer**.
-2. **Vai trò quyết định của từng thành phần qua Nghiên cứu Cắt bỏ (Ablation Study):**
-   - Khi chỉ huấn luyện với `AGTD` (kèm S1, S2), Độ chính xác Khớp tương đồng trên WOAM tăng từ 40,49% lên 62,15%, chứng tỏ AGTD giúp định hình khuôn mẫu trích xuất JSON chuẩn xác. Ngược lại, nếu chỉ dùng `CTTD` mà thiếu `AGTD`, Độ chính xác chỉ đạt 50,15% do mô hình chưa học được cách sinh ứng viên thuộc tính ở Giai đoạn 1.
-   - Khi giữ nguyên `AGTD + CTTD + S1 + S2` nhưng bỏ Giai đoạn 3 (`S3`), Độ phủ (Recall) đạt đỉnh (67,91% trên WOAM) nhưng Độ chính xác (Precision) chỉ đạt 63,72% (Similar Match) và 29,47% (Exact Match). Khi kích hoạt `S3` (CoT 5 bước), một lượng nhỏ Độ phủ được đánh đổi (giảm nhẹ từ 67,91% xuống 66,99%) để đổi lấy mức tăng vọt về Độ chính xác (tăng lên **66,90%** ở Similar Match và **35,34%** ở Exact Match).
-   - Thống kê trực tiếp trên **1.028 thuộc tính** đi qua Giai đoạn 3 cho thấy: **93,3%** thuộc tính được giữ lại (`yes`) và **6,7%** bị bác bỏ (`no`). Trong số 6,7% thuộc tính bị bác bỏ đó, có tới **98,6%** là các thuộc tính dương tính giả được tự sửa lỗi thành công (*Self-corrected Negatives*), chỉ có **1,4%** bị loại nhầm.
+1. **Sự bứt phá nhờ tinh chỉnh theo chỉ dẫn đa phương thức có khả năng tự hiệu chỉnh:** Khi áp dụng MSIT lên cả 3 mô hình nền (Qwen-VL, InternLM, LLaVA-7B), hiệu năng đều tăng vọt so với phiên bản gốc chưa tinh chỉnh. Đáng chú ý nhất, `MSIT (LLaVA-7B)` nâng Độ chính xác ở chế độ So khớp chính xác (Exact Match Precision) trên WOAM từ **10,61% lên 35,34%** (gấp hơn 3,3 lần) và trên OAMine từ **16,71% lên 54,33%**, vượt xa cả mô hình thương mại khổng lồ **GPT-4** (15,51% trên WOAM và 29,25% trên OAMine) cũng như hai phương pháp đơn phương thức chuyên biệt là **OA-Mine** và **Amacer**.
+2. **Vai trò quyết định của từng thành phần qua Thực nghiệm Cắt bỏ (Ablation Study):**
+   - Khi chỉ huấn luyện với `AGTD` (kèm S1, S2), Độ chính xác So khớp tương đồng trên WOAM tăng từ 40,49% lên 62,15%, chứng tỏ AGTD giúp định hình khuôn mẫu trích xuất JSON chuẩn xác. Ngược lại, nếu chỉ dùng `CTTD` mà thiếu `AGTD`, Độ chính xác chỉ đạt 50,15% do mô hình chưa học được cách sinh ứng viên thuộc tính ở Giai đoạn 1.
+   - Khi giữ nguyên `AGTD + CTTD + S1 + S2` nhưng bỏ Giai đoạn 3 (`S3`), Độ phủ (Recall) đạt đỉnh (67,91% trên WOAM) nhưng Độ chính xác (Precision) chỉ đạt 63,72% (Similar Match) và 29,47% (Exact Match). Khi kích hoạt `S3` (thẩm định bằng CoT 5 bước), một lượng nhỏ Độ phủ được đánh đổi (giảm nhẹ từ 67,91% xuống 66,99%) để đổi lấy mức tăng vọt về Độ chính xác (tăng lên **66,90%** ở Similar Match và **35,34%** ở Exact Match).
+   - Thống kê trực tiếp trên **1.028 thuộc tính** đi qua Giai đoạn 3 cho thấy: **93,3%** thuộc tính được giữ lại (`yes`) và **6,7%** bị bác bỏ (`no`). Trong số 6,7% thuộc tính bị bác bỏ đó, có tới **98,6%** là các thuộc tính dương tính giả được tự hiệu chỉnh thành công (*Self-corrected Negatives*), chỉ có **1,4%** bị loại nhầm.
 3. **Tác động của định dạng đầu ra, quy mô dữ liệu và khả năng thích nghi miền:**
-   - Nếu chỉ yêu cầu mô hình sinh tên thuộc tính (`Attri-only`) thay vì cặp `thuộc tính : giá trị` (`Attri-Value`), kết quả Khớp chính xác giảm thê thảm xuống 28,68% P / 38,37% R (so với 35,34% P / 52,50% R). Việc buộc sinh kèm giá trị đóng vai trò như một neo ngữ nghĩa giúp mô hình bám sát vào bằng chứng thực tế.
-   - Khi tăng kích thước tập CTTD từ 100 lên 300 mẫu, Recall Khớp tương đồng tăng mạnh từ 53,88% lên 66,99% và Recall Khớp chính xác tăng từ 42,89% lên 52,50%.
-   - Trong bài kiểm tra thích nghi miền chéo (*Leave-One-Category-Out* trên 4 ngành hàng Sofa, Phone, Tea, Vitamin) và phân tích riêng từng loại đầu vào (`image`, `bullet`, `title`), MSIT đều vượt qua GPT-4, đặc biệt đạt Độ chính xác Khớp tương đồng **69,21%** và Khớp chính xác **40,96%** khi trích xuất từ kênh hình ảnh.
+   - Nếu chỉ yêu cầu mô hình sinh tên thuộc tính (`Attri-only`) thay vì cặp `thuộc tính : giá trị` (`Attri-Value`), kết quả So khớp chính xác giảm mạnh xuống 28,68% P / 38,37% R (so với 35,34% P / 52,50% R). Việc buộc sinh kèm giá trị đóng vai trò như một điểm neo ngữ nghĩa giúp mô hình bám sát vào bằng chứng thực tế.
+   - Khi tăng kích thước tập CTTD từ 100 lên 300 mẫu, Recall So khớp tương đồng tăng mạnh từ 53,88% lên 66,99% và Recall So khớp chính xác tăng từ 42,89% lên 52,50%.
+   - Trong bài kiểm tra thích nghi miền chéo (*Leave-One-Category-Out* trên 4 ngành hàng Sofa, Phone, Tea, Vitamin) và phân tích riêng từng loại đầu vào (`image`, `bullet`, `title`), MSIT đều vượt qua GPT-4, đặc biệt đạt Độ chính xác So khớp tương đồng **69,21%** và So khớp chính xác **40,96%** khi khai phá từ kênh hình ảnh.
 
 ---
 
 ### 3.4. Quá trình và Kết quả Tái lập Thực nghiệm của Nhóm trên Bài báo 1 (MSIT)
 
-Bám sát yêu cầu tái lập thực nghiệm, nhóm chúng tôi đã thiết kế và xây dựng lại toàn bộ mã nguồn của khung phương pháp **MSIT** từ đầu bằng ngôn ngữ Python và quản trị công khai trên nền tảng GitHub tại địa chỉ:
+Bám sát yêu cầu tái lập thực nghiệm, nhóm chúng tôi đã thiết kế và xây dựng lại toàn bộ mã nguồn của phương pháp **MSIT** từ đầu bằng ngôn ngữ Python và quản trị công khai trên nền tảng GitHub tại địa chỉ:
 
 - **Link GitHub Repository của nhóm:** [https://github.com/linhnnh688/msit-open-world](https://github.com/linhnnh688/msit-open-world)
 
@@ -219,7 +219,7 @@ Trong bài báo gốc, tác giả sử dụng GPU **NVIDIA Tesla A100 (40GB/80GB
 1. **Tái hiện nguyên bản toàn bộ hệ thống Prompt và Pipeline 3 Giai đoạn (`msit/prompts/`, `msit/data/`, `msit/inference/`, `msit/evaluation/`):**
    - Cài đặt chính xác các mẫu câu lệnh tại Phụ lục A.1 (tách biệt trích xuất ảnh/văn bản kèm 4 mẫu ICL), Phụ lục A.2 (hợp nhất), Phụ lục A.3 (CoT 5 bước), cùng 10 câu lệnh Bảng 4 và 5 câu lệnh Bảng 5.
    - Hiện thực hóa đầy đủ thuật toán Giai đoạn 2 (`msit/inference/stage2_dedup.py`): tách từ con chữ thường - chữ số, ghép cặp song phân tham lam (*greedy bipartite matching*) một-đối-một với ngưỡng chuẩn `0.70` và ngưỡng cao `0.85` cho cụm 1 từ con trên vector `word2vec-google-news-300`, cùng 3 quy tắc xóa (`choose_deletion`).
-   - Hiện thực hóa mô-đun kiểm chứng tuần tự Giai đoạn 3 (`stage3_cot_infer.py`) và bộ tính độ đo Khớp chính xác / Khớp tương đồng qua 5 lần chạy (`metrics.py`, `evaluate.py`).
+   - Hiện thực hóa mô-đun thẩm định tuần tự Giai đoạn 3 (`stage3_cot_infer.py`) và bộ tính độ đo So khớp chính xác / So khớp tương đồng qua 5 lần chạy (`metrics.py`, `evaluate.py`).
 2. **Kiến tạo Bộ dữ liệu Tinh chỉnh Đa phương thức Thực tế (`msit/data/sft_datasets/`):**
    - Thay vì phụ thuộc vào GPT-4 đóng phí, nhóm sử dụng mô hình mở tiên tiến **`Qwen/Qwen2.5-VL-7B-Instruct`** làm mô hình sinh dữ liệu (*teacher model*) trên bộ dữ liệu WOAM kết hợp ảnh sản phẩm thực tế (`/kaggle/input/datasets/kunzero106/msit-open-world-dataset/datasets/images/woam/`).
    - Nhóm đã khởi tạo thành công đúng quy mô của bài báo gốc:
@@ -235,7 +235,7 @@ Trong bài báo gốc, tác giả sử dụng GPU **NVIDIA Tesla A100 (40GB/80GB
 ##### (a) Quá trình Hội tụ Huấn luyện QLoRA trên Tập dữ liệu AGTD + CTTD (1.300 mẫu)
 
 - **Liên kết Weights & Biases ghi nhận quá trình huấn luyện chính:** `[Gắn link Public WandB Run - Training MSIT Qwen-VL LoRA tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_train>]`
-- **Trọng số Adapter đã huấn luyện lưu trữ trong Repository:** [`msit/results/msit_qwen_lora_final/`](file:///d:/workspace/msit-open-world/msit/results/msit_qwen_lora_final/adapter_config.json) (dung lượng adapter `20,2 MB`, huấn luyện trên nền `Qwen/Qwen2-VL-7B-Instruct` qua 3 epochs / 246 bước cập nhật trọng số, tổng số phép tính dấu phẩy động $\text{Total FLOPs} = 1,205 \times 10^{17}$).
+- **Trọng số Adapter đã huấn luyện lưu trữ trong Repository:** `msit/results/msit_qwen_lora_final/` (dung lượng adapter `20,2 MB`, huấn luyện trên nền `Qwen/Qwen2-VL-7B-Instruct` qua 3 epochs / 246 bước cập nhật trọng số, tổng số phép tính dấu phẩy động $\text{Total FLOPs} = 1,205 \times 10^{17}$).
 
 #### Bảng 2: Diễn biến hàm mất mát (Training Loss), chuẩn đạo hàm (Grad Norm) và tốc độ học theo bước huấn luyện (Trích xuất từ `trainer_state.json`)
 
@@ -244,36 +244,36 @@ Trong bài báo gốc, tác giả sử dụng GPU **NVIDIA Tesla A100 (40GB/80GB
 | 10 | 0,12 | 2,0925 | 0,4912 | $9,00 \times 10^{-5}$ | Giai đoạn khởi động (Warmup) |
 | 20 | 0,25 | 1,8235 | 0,4647 | $1,90 \times 10^{-4}$ | Kết thúc Warmup, Loss giảm nhanh |
 | 40 | 0,49 | 1,4973 | 0,3783 | $1,97 \times 10^{-4}$ | Học cấu trúc đầu ra JSON & CoT |
-| 80 | 0,98 | 1,3201 | 0,3116 | $1,68 \times 10^{-4}$ | Kết thúc Epoch 1 (`checkpoint-82`) |
+| 80 | 0,98 | 1,3201 | 0,3116 | $1,68 \times 10^{-4}$ | Kết thúc Epoch 1 (`ckpt-82`: 1,2728) |
 | 110 | 1,34 | 1,2249 | 0,3640 | $1,33 \times 10^{-4}$ | Giảm sâu hơn ở đầu Epoch 2 |
-| 160 | 1,96 | 1,2643 | 0,4282 | $6,46 \times 10^{-5}$ | Kết thúc Epoch 2 (`checkpoint-164`) |
+| 160 | 1,96 | 1,2643 | 0,4282 | $6,46 \times 10^{-5}$ | Kết thúc Epoch 2 (`ckpt-164`: 1,2500) |
 | 180 | 2,20 | 1,2103 | 0,4006 | $4,03 \times 10^{-5}$ | Đi vào vùng hội tụ ổn định |
 | 220 | 2,69 | **1,1821** | 0,4377 | $6,96 \times 10^{-6}$ | Đạt giá trị Loss thấp nhất |
-| 240 | 2,94 | 1,2412 | 0,4224 | $4,73 \times 10^{-7}$ | Kết thúc Epoch 3 (`checkpoint-246`) |
+| 240 | 2,94 | 1,2412 | 0,4224 | $4,73 \times 10^{-7}$ | Kết thúc Epoch 3 (`ckpt-246`: 1,1976) |
 
 **Nhận xét quá trình huấn luyện:** Hàm mất mát giảm mượt mà và nhất quán từ **2,0925** ở bước 10 xuống mức thấp nhất **1,1821** ở bước 220 (giảm **43,5%**), trong khi chuẩn đạo hàm (`grad_norm`) luôn duy trì ổn định trong khoảng `[0,31; 0,49]`, chứng tỏ quá trình tinh chỉnh hỗn hợp trên 1.000 mẫu AGTD và 300 mẫu CTTD bằng QLoRA hoàn toàn không bị bùng nổ đạo hàm hay quá khớp cục bộ.
 
 ##### (b) Phân tích Thực nghiệm Kiến tạo Dữ liệu Suy luận 5 Bước (CTTD) và Hiện tượng Bảo thủ của MLLM
 
-- **Liên kết Weights & Biases ghi nhận thực nghiệm CTTD & Self-Correction:** `[Gắn link Public WandB Run - CTTD & Self-Correction Analysis tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_cttd>]`
+- **Liên kết Weights & Biases ghi nhận thực nghiệm CTTD & Tự hiệu chỉnh:** `[Gắn link Public WandB Run - CTTD & Self-Correction Analysis tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_cttd>]`
 - Khi phân tích tập dữ liệu `cttd_train.jsonl` (300 mẫu cân bằng gồm 150 mẫu dương `cttd_label = yes` và 150 mẫu âm `cttd_label = no`) do mô hình chưa tinh chỉnh sinh chuỗi suy luận 5 bước, nhóm ghi nhận một kết quả thực nghiệm rất thú vị: mô hình đưa ra phán đoán cuối cùng (`decision`) gồm **213 kết luận `no` (71,0%)** và **87 kết luận `yes` (29,0%)**.
-- Điều này cho thấy khi yêu cầu một MLLM phổ dụng thực hiện quy trình kiểm chứng 5 bước khắt khe mà chưa qua tinh chỉnh chuyên biệt, mô hình có xu hướng **bảo thủ (*conservative bias*)** — tức là bác bỏ rất tốt các thuộc tính âm tính giả từ sản phẩm khác, nhưng cũng dễ bác bỏ nhầm một số thuộc tính ẩn nếu không nhìn rõ trên ảnh. Sau khi tinh chỉnh kết hợp cả AGTD và CTTD, sự cân bằng giữa khả năng phát hiện thuộc tính (Giai đoạn 1) và khả năng tự sửa lỗi (Giai đoạn 3) được khôi phục đúng như phân tích trong bài báo gốc.
+- Điều này cho thấy khi yêu cầu một MLLM phổ dụng thực hiện quy trình thẩm định 5 bước khắt khe mà chưa qua tinh chỉnh chuyên biệt, mô hình có xu hướng **bảo thủ (*conservative bias*)** — tức là bác bỏ rất tốt các thuộc tính âm tính giả từ sản phẩm khác, nhưng cũng dễ bác bỏ nhầm một số thuộc tính ẩn nếu không nhìn rõ trên ảnh. Sau khi tinh chỉnh kết hợp cả AGTD và CTTD, sự cân bằng giữa khả năng khai phá thuộc tính (Giai đoạn 1) và khả năng tự hiệu chỉnh (Giai đoạn 3) được khôi phục đúng như phân tích trong bài báo gốc.
 
-##### (c) Kiểm chứng Pipeline Suy luận 3 Giai đoạn và Nghiên cứu Cắt bỏ trên Tập mẫu Chuẩn
+##### (c) Kiểm chứng Pipeline Suy luận 3 Giai đoạn và Thực nghiệm Cắt bỏ trên Tập mẫu Chuẩn
 
 - **Liên kết Weights & Biases ghi nhận Kết quả chính (Main Results):** `[Gắn link Public WandB Run - Main Evaluation tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_main_eval>]`
-- **Liên kết Weights & Biases ghi nhận Nghiên cứu cắt bỏ (Ablation Study S1/S2/S3):** `[Gắn link Public WandB Run - Ablation Study tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_ablation>]`
+- **Liên kết Weights & Biases ghi nhận Thực nghiệm cắt bỏ (Ablation Study S1/S2/S3):** `[Gắn link Public WandB Run - Ablation Study tại đây: https://wandb.ai/<username>/msit-open-world/runs/<run_id_ablation>]`
 - Trên bộ kiểm thử đơn vị và pipeline thực thi đầu-cuối (`msit/demo.py` và `msit/tests/test_msit.py`), nhóm đã xác minh tính đúng đắn của từng giai đoạn trên các sản phẩm chuẩn của bài báo (như *Micro Ingredients Organic Matcha Green Tea 1lb*, *Chiquita Banana Bread Mix 13.7 oz*, và *Traditional Medicinals Herbal Tea 16 Tea Bags*):
-  - **Tại Giai đoạn 1 (`Stage1BatchGenerator`):** Trích xuất thành công cả các thuộc tính văn bản (`brand`, `Tea_Type`, `caffeine_content`) lẫn các thuộc tính thị giác từ bao bì (`Product_Shape: Powder`, `Weight: 1lb`).
+  - **Tại Giai đoạn 1 (`Stage1BatchGenerator`):** Khai phá thành công cả các thuộc tính văn bản (`brand`, `Tea_Type`, `caffeine_content`) lẫn các thuộc tính thị giác từ bao bì (`Product_Shape: Powder`, `Weight: 1lb`).
   - **Tại Giai đoạn 2 (`Stage2RepeatedAttributeFilter`):** Kiểm chứng chính xác 3 quy tắc xóa từ đồng nghĩa (ví dụ: giữa `"type"` [1 từ con] và `"product_type"` [2 từ con] hoặc các cụm $\ge 3$ từ con), loại bỏ hoàn toàn các thuộc tính trùng lặp trước khi sang Giai đoạn 3.
-  - **Tại Giai đoạn 3 (`Stage3CoTValidator`):** Giữ lại 100% các thuộc tính hợp lệ (4/4 thuộc tính cho sản phẩm Matcha và Banana Bread Mix; 6/6 thuộc tính cho sản phẩm Herbal Tea, tổng cộng $\text{TP} = 14, \text{FP} = 0, \text{FN} = 0$, đạt $\text{Precision} = 1,0000, \text{Recall} = 1,0000$ trên tập kiểm thử chuẩn hóa) và loại bỏ chính xác các thuộc tính nhiễu từ ngành hàng khác.
+  - **Tại Giai đoạn 3 (`Stage3CoTValidator`):** Giữ lại 100% các thuộc tính hợp lệ (4/4 thuộc tính cho sản phẩm Matcha và Banana Bread Mix; 6/6 thuộc tính cho sản phẩm Herbal Tea, tổng cộng $\text{TP} = 14, \text{FP} = 0, \text{FN} = 0$, đạt $\text{Precision} = 1,0000, \text{Recall} = 1,0000$ trên tập kiểm thử chuẩn hóa) và tự hiệu chỉnh chính xác các thuộc tính nhiễu từ ngành hàng khác.
 - *(Lưu ý kỹ thuật được nhóm phát hiện trong quá trình kiểm thử mã nguồn)*: Khi chạy bộ 25 bài kiểm thử tự động trong `msit/tests/test_msit.py`, nhóm ghi nhận 23/25 bài đạt (`PASS`) và phát hiện 2 trường hợp biên thú vị trong hàm hậu xử lý chuỗi kết luận `_concludes_yes` / `parse_conclusion` khi chuỗi văn bản đầu ra có định dạng xuống dòng hoặc dấu câu đặc biệt ở Bước 5. Phát hiện này củng cố thêm nhận định rằng trong các hệ thống MLLM sinh văn bản tự do, khâu chuẩn hóa cú pháp đầu ra (*output parsing*) ở bước quyết định cuối cùng đóng vai trò rất quan trọng đối với độ ổn định của toàn hệ thống.
 
 ---
 
-## IV. CĂN CHỈNH ĐỒ THỊ THỰC THỂ VÀ SUY LUẬN THỊ GIÁC TRONG PHÁT HIỆN TIN GIẢ ĐA PHƯƠNG THỨC (BÀI BÁO 2 — CMA-VRP)
+## IV. CĂN CHỈNH ĐỒ THỊ THỰC THỂ VÀ SUY LUẬN THỊ GIÁC CHO PHÁT HIỆN TIN GIẢ ĐA PHƯƠNG THỨC (BÀI BÁO 2 — CMA-VRP)
 
-Nếu như ở Phần thứ nhất (Mục III), bài toán đặt ra là làm sao để **tổng hợp và làm giàu tri thức** từ sự bổ khuyết giữa hình ảnh và văn bản của một sản phẩm thương mại điện tử, thì sang Phần thứ hai này, chúng ta xét bài toán ở chiều ngược lại: làm sao để **phát hiện sự mâu thuẫn ngầm và chống lại nhiễu loạn** giữa hình ảnh và văn bản nhằm nhận diện tin giả trên mạng xã hội thông qua khung phương pháp **CMA-VRP** (*Cross-Modal Alignment with Visual Reasoning Prompting*) [2].
+Nếu như ở Phần thứ nhất (Mục III), bài toán đặt ra là làm sao để **khai phá và làm giàu tri thức** từ sự bổ khuyết giữa hình ảnh và văn bản của một sản phẩm thương mại điện tử trong môi trường mở, thì sang Phần thứ hai này, chúng ta xét bài toán ở chiều ngược lại: làm sao để **phát hiện sự mâu thuẫn ngữ nghĩa tinh vi và chống lại nhiễu loạn** giữa hình ảnh và văn bản nhằm nhận diện tin giả trên mạng xã hội thông qua phương pháp **CMA-VRP** (*Cross-Modal Alignment with Visual Reasoning Prompting*) [2].
 
 ### 4.1. Bản chất Bài toán và Hai Thách thức Cốt lõi trong Phát hiện Tin giả Đa phương thức
 
@@ -288,7 +288,7 @@ Theo phân tích của nhóm chúng tôi từ công trình CMA-VRP, sự phức 
 
 ### 4.2. Phân tích Chi tiết Kiến trúc 3 Phân hệ của CMA-VRP
 
-Để giải quyết đồng thời hai thách thức trên, kiến trúc **CMA-VRP** được thiết kế gồm 3 phân hệ phối hợp chặt chẽ: (1) Khởi tạo đồ thị thực thể đơn phương thức và suy luận thị giác hướng chân lý; (2) Học tương phản đồ thị kép và dung hợp đồ thị liên phương thức; và (3) Học biểu diễn bất biến qua chu trình đối kháng.
+Để giải quyết đồng thời hai thách thức trên, kiến trúc **CMA-VRP** được thiết kế gồm 3 phân hệ phối hợp chặt chẽ: (1) Khởi tạo đồ thị thực thể đơn phương thức và suy luận thị giác định hướng xác thực; (2) Học tương phản đồ thị kép và dung hợp đồ thị liên phương thức; và (3) Học biểu diễn bất biến qua chu trình đối kháng.
 
 ```mermaid
 flowchart TD
@@ -297,8 +297,8 @@ flowchart TD
     subgraph Mod1["Phân hệ 1: Khởi tạo Đồ thị Thực thể & Suy luận Thị giác (VRP)"]
         Input --> G_t["Đồ thị Văn bản G_t = (V_T, E_T)<br/>Phân tích cú pháp + Nhúng BERT X_t + Cạnh Z_t"]
         Input --> G_v["Đồ thị Thị giác G_v = (V_I, E_I)<br/>Mask-RCNN Scene Graph + Nút toàn cục v_g + Nút chữ Rosetta OCR v_ocr"]
-        G_t --> Mistral["Mistral-7B (Không tinh chỉnh)<br/>Prompt 2 tầng cho N_t thực thể văn bản"]
-        G_v --> LLaVA["LLaVA-1.6-13B (Không tinh chỉnh)<br/>Prompt 2 tầng cho N_v thực thể thị giác"]
+        G_t --> Mistral["Mistral-7B (Đóng băng)<br/>Gợi mở 2 tầng cho N_t thực thể văn bản"]
+        G_v --> LLaVA["LLaVA-1.6-13B (Đóng băng)<br/>Gợi mở 2 tầng cho N_v thực thể thị giác"]
         Mistral --> VRF_t["Mã hóa qua BERT -> Đặc trưng VRF_t"]
         LLaVA --> VRF_v["Mã hóa qua BERT -> Đặc trưng VRF_v"]
     end
@@ -310,7 +310,7 @@ flowchart TD
         Fusion --> Rep_o["Biểu diễn Nhất quán Ngữ nghĩa: o = m_{G_m}"]
     end
 
-    subgraph Mod3["Phân hệ 3: Học Bất biến Chu trình Đối kháng (ACCIL)"]
+    subgraph Mod3["Phân hệ 3: Học Biểu diễn Bất biến qua Chu trình Đối kháng (ACCIL)"]
         G_t & G_v & VRF_t & VRF_v --> VSCA["Căn chỉnh Chu trình Thị giác - Ngữ nghĩa (VSCA)<br/>CycleGAN + Khoảng cách Wasserstein có trọng số wd(u,w)"]
         VSCA --> DualD["Khung Bộ phân biệt Kép (D_0 và D_1)<br/>Trọng số bất biến w_i(x) = 1 - D_0^i(x) & Cực tiểu hóa phân kỳ JSD"]
         DualD --> Rep_cm["Biểu diễn Bất biến Phương thức: c_m = max(w_t c_t, w_v c_v)"]
@@ -319,11 +319,11 @@ flowchart TD
     Rep_o & Rep_cm --> Classifier["Ghép nối x_hat = o ⊕ c_m -> Tầng phân loại Softmax (Tin thật / Tin giả)"]
 ```
 
-*Hình 3: Sơ đồ kiến trúc 3 phân hệ của khung phương pháp CMA-VRP được nhóm tái cấu trúc và trực quan hóa.*
+*Hình 3: Sơ đồ kiến trúc 3 phân hệ của phương pháp CMA-VRP được nhóm tái cấu trúc và trực quan hóa.*
 
 ---
 
-#### 4.2.1. Phân hệ 1: Khởi tạo Đồ thị Hướng Thực thể và Suy luận Thị giác Hướng Chân lý
+#### 4.2.1. Phân hệ 1: Khởi tạo Đồ thị Hướng Thực thể và Suy luận Thị giác Định hướng Xác thực
 
 Thay vì biểu diễn cả câu văn hay cả bức ảnh bằng một vector phẳng duy nhất, CMA-VRP bóc tách dữ liệu thành cấu trúc đồ thị chi tiết:
 
@@ -332,10 +332,10 @@ Thay vì biểu diễn cả câu văn hay cả bức ảnh bằng một vector p
   1. **Nút toàn cục ($v_g$):** Mã hóa toàn bộ bức ảnh thành một nút chung và nối với mọi thực thể $\mathcal{V}_v$ để giữ ngữ cảnh tổng thể.
   2. **Các nút văn bản trong ảnh ($v_{ocr}$):** Sử dụng hệ thống **Rosetta OCR** để đọc toàn bộ chữ xuất hiện trong ảnh (khẩu hiệu trên biểu ngữ, chữ đóng dấu watermark), phân tích cú pháp và đưa vào đồ thị thị giác như các nút bổ sung liên kết với các đối tượng xung quanh. Nhờ có $v_{ocr}$, những chi tiết như tấm biển *"not in my name"* không bao giờ bị bỏ sót.
 
-- **Suy luận Thị giác dựa trên CoT Hướng Chân lý (*Truth-Driven CoT-based Visual Reasoning — VRP*):**
-  Để bổ sung tri thức nền và khả năng suy luận hành vi cho các nút đồ thị mà **không cần tinh chỉnh (zero-shot prompting)** nhằm tránh hiện tượng ảo giác của LVLM khi fine-tune, nhóm tác giả thiết kế quy trình gợi ý 2 tầng tách biệt: dùng **Mistral-7B** cho $N_t$ thực thể văn bản và **LLaVA-1.6-13B** cho $N_v$ thực thể thị giác:
-  - *Tầng gợi ý 1 (Sinh lý giải kiểm chứng):* Yêu cầu mô hình xét từng thực thể và lập luận xem đặc điểm thị giác nào của thực thể đó sẽ chứng minh hoặc bác bỏ tính chân thực của bản tin.
-  - *Tầng gợi ý 2 (Tóm tắt đặc trưng thị giác đối chiếu):* Từ lập luận ở tầng 1, yêu cầu mô hình tóm tắt ngắn gọn đặc trưng thị giác **kỳ vọng** (đối với thực thể văn bản, ví dụ: *"người biểu tình phải có vẻ mặt bình tĩnh, không đối đầu"*) và đặc trưng thị giác **quan sát thực tế** (đối với thực thể trong ảnh, ví dụ: *"vẻ mặt căng thẳng, đang bị cảnh sát khống chế chặt"*).
+- **Suy luận Thị giác dựa trên CoT Định hướng Xác thực (*Truth-Driven CoT-based Visual Reasoning — VRP*):**
+  Để bổ sung tri thức nền và khả năng suy luận hành vi cho các nút đồ thị mà **không cần tinh chỉnh (zero-shot prompting)** nhằm tránh hiện tượng ảo giác của LVLM khi fine-tune, nhóm tác giả thiết kế quy trình gợi mở suy luận 2 tầng tách biệt: dùng **Mistral-7B** cho $N_t$ thực thể văn bản và **LLaVA-1.6-13B** cho $N_v$ thực thể thị giác:
+  - *Tầng gợi mở 1 (Sinh lập luận kiểm chứng):* Yêu cầu mô hình xét từng thực thể và lập luận xem đặc điểm thị giác nào của thực thể đó sẽ chứng minh hoặc bác bỏ tính xác thực của bản tin.
+  - *Tầng gợi mở 2 (Tóm tắt đặc trưng thị giác đối chiếu):* Từ lập luận ở tầng 1, yêu cầu mô hình tóm tắt ngắn gọn đặc trưng thị giác **kỳ vọng** (đối với thực thể văn bản, ví dụ: *"người biểu tình phải có vẻ mặt bình tĩnh, không đối đầu"*) và đặc trưng thị giác **quan sát thực tế** (đối với thực thể trong ảnh, ví dụ: *"vẻ mặt căng thẳng, đang bị cảnh sát khống chế chặt"*).
   Chuỗi văn bản tóm tắt này được mã hóa qua **BERT** để tạo thành hai tập vector **Đặc trưng Suy luận Thị giác** là $VRF_t$ (cho văn bản) và $VRF_v$ (cho hình ảnh).
 
 ---
@@ -371,7 +371,7 @@ Sau khi có hai đồ thị $\mathcal{G}_t$ và $\mathcal{G}_v$, mô hình cần
 
 ---
 
-#### 4.2.3. Phân hệ 3: Học Bất biến Chu trình Đối kháng (ACCIL)
+#### 4.2.3. Phân hệ 3: Học Biểu diễn Bất biến qua Chu trình Đối kháng (ACCIL)
 
 Trong thực tế, rất nhiều thực thể giữa ảnh và bài viết không thể ghép cặp trực tiếp với nhau, đồng thời mỗi phương thức lại mang theo nhiễu riêng (như chữ watermark trên ảnh hay hashtag rác trong văn bản). Phân hệ **ACCIL** giải quyết bài toán này qua 2 bước:
 
@@ -382,7 +382,7 @@ Trong thực tế, rất nhiều thực thể giữa ảnh và bài viết khôn
    $$\mathcal{L}_{cycle} = -\mathbb{E}_{u \sim \mathcal{G}_t} \left[ D_s\left(u, VRF_t(u)\right) \right] + \mathbb{E}_{w \sim \mathcal{G}_v} \left[ D_s\left(w, VRF_v(w)\right) \right] \quad (9)$$
    Sau bước căn chỉnh chu trình này, hàm $\text{READOUT}$ gom các nút lại thành hai vector biểu diễn phương thức đã làm sạch sơ bộ là $e_t$ và $e_v$.
 
-2. **Trích xuất Đặc trưng Bất biến Phương thức bằng Khung Bộ phân biệt Kép (*Dual-Discriminator Framework*):**
+2. **Trích xuất Đặc trưng Bất biến giữa các Phương thức bằng Khung Bộ phân biệt Kép (*Dual-Discriminator Framework*):**
    Để tách bỏ hoàn toàn phần nhiễu đặc thù của từng phương thức và chỉ giữ lại phần ngữ nghĩa cốt lõi chung (*modality-invariant features*), tác giả đưa $e \in \{e_t, e_v\}$ qua tầng chiếu bất biến $c = I(e)$ và đặt hai bộ phân biệt đối kháng nối tiếp:
    - **Bộ phân biệt thứ nhất $D_0$:** Đánh giá xác suất mẫu thuộc phương thức $i$, từ đó gán **trọng số bất biến phương thức** $w_i(x) = 1 - D_0^i(x)$ (mẫu càng khó phân biệt phương thức thì càng nhận trọng số cao).
    - **Bộ phân biệt thứ hai $D_1$:** Thực hiện trò chơi minimax có trọng số nhằm trộn lẫn hoàn toàn phân phối của hai phương thức:
@@ -402,7 +402,7 @@ Trong thực tế, rất nhiều thực thể giữa ảnh và bài viết khôn
 
 ---
 
-### 4.3. Phân tích Kết quả Thực nghiệm, Độ Bền vững trước Nhiễu và Nghiên cứu Cắt bỏ của CMA-VRP
+### 4.3. Phân tích Kết quả Thực nghiệm, Độ Bền vững trước Nhiễu và Thực nghiệm Cắt bỏ của CMA-VRP
 
 Mô hình CMA-VRP được đánh giá trên 3 bộ dữ liệu chuẩn quy mô lớn: **Twitter** (MediaEval: huấn luyện 7.898 tin thật / 6.026 tin giả; kiểm thử 1.972 tin thật / 3.830 tin giả), **Pheme** (1.972 tin thật / 3.830 tin giả từ 5 sự kiện nóng với 3.670 ảnh), và **Weibo** (huấn luyện 6.840 tin thật / 5.007 tin giả; kiểm thử 996 tin thật / 1.000 tin giả).
 
@@ -422,7 +422,7 @@ Mô hình CMA-VRP được đánh giá trên 3 bộ dữ liệu chuẩn quy mô 
 | NLIN (LVLM tinh chỉnh) | 0,883 | 0,893 | 0,867 | 0,903 | 0,883 | 0,875 | 0,911 | 0,904 | 0,913 |
 | **CMA-VRP (Đề xuất)** | **$0,930^*$** | **$0,926^*$** | **$0,932^*$** | **$0,926^*$** | **$0,927^*$** | **$0,926^*$** | **$0,938^*$** | **$0,941^*$** | **$0,938^*$** |
 
-#### Bảng 4: Kết quả Nghiên cứu Cắt bỏ (Ablation Study) các thành phần kiến trúc của CMA-VRP
+#### Bảng 4: Kết quả Thực nghiệm Cắt bỏ (Ablation Study) khảo sát vai trò các thành phần kiến trúc của CMA-VRP
 
 | Cấu hình biến thể | Twitter Accuracy | Twitter F1 | Pheme Accuracy | Pheme F1 | Weibo Accuracy | Weibo F1 | Mức sụt giảm Acc trung bình |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -437,10 +437,10 @@ Mô hình CMA-VRP được đánh giá trên 3 bộ dữ liệu chuẩn quy mô 
 **Các luận điểm phân tích chuyên sâu từ kết quả của CMA-VRP:**
 
 1. **Tại sao LVLM dùng trực tiếp hoặc tinh chỉnh đơn thuần lại thua cấu trúc Đồ thị kết hợp VRP?**
-   Nhìn vào Bảng 3, khi dùng trực tiếp `LLaVA`, độ chính xác trên Twitter chỉ đạt **64,1%** (thậm chí chỉ nhỉnh hơn BERT 62,9%). Ngay cả khi áp dụng tinh chỉnh gợi ý mềm (`LLaVA + SPT` đạt 78,3%) hay biến đổi sang không gian ngôn ngữ tự nhiên (`NLIN` đạt 88,3%), chúng vẫn kém xa **CMA-VRP (93,0%)**. Nguyên nhân là bởi LVLM khi nhìn toàn ảnh thường bỏ qua mối tương quan cấu trúc chi tiết giữa các thực thể và dễ sinh ảo giác khi tinh chỉnh. Ngược lại, CMA-VRP chỉ dùng Mistral-7B và LLaVA-1.6-13B như những "chuyên gia cố vấn không tinh chỉnh" để trích xuất đặc trưng suy luận $VRF_t, VRF_v$, rồi đặt việc học căn chỉnh lên cấu trúc đồ thị thực thể tường minh.
-2. **Đóng góp của từng phân hệ qua Nghiên cứu Cắt bỏ (Bảng 4) và Trực quan hóa t-SNE:**
+   Nhìn vào Bảng 3, khi dùng trực tiếp `LLaVA`, độ chính xác trên Twitter chỉ đạt **64,1%** (thậm chí chỉ nhỉnh hơn BERT 62,9%). Ngay cả khi áp dụng tinh chỉnh gợi mở mềm (`LLaVA + SPT` đạt 78,3%) hay biến đổi sang không gian ngôn ngữ tự nhiên (`NLIN` đạt 88,3%), chúng vẫn kém xa **CMA-VRP (93,0%)**. Nguyên nhân là bởi LVLM khi nhìn toàn ảnh thường bỏ qua mối tương quan cấu trúc chi tiết giữa các thực thể và dễ sinh ảo giác khi tinh chỉnh. Ngược lại, CMA-VRP chỉ dùng Mistral-7B và LLaVA-1.6-13B như những "chuyên gia cố vấn đóng băng" để trích xuất đặc trưng suy luận $VRF_t, VRF_v$, rồi đặt việc học căn chỉnh lên cấu trúc đồ thị thực thể tường minh.
+2. **Đóng góp của từng phân hệ qua Thực nghiệm Cắt bỏ (Bảng 4) và Trực quan hóa t-SNE:**
    - Khi gỡ bỏ phân hệ Căn chỉnh và Dung hợp Đồ thị (`-w/o CMGAF`), độ chính xác giảm mạnh nhất (trung bình giảm **3,87%** trên 3 tập dữ liệu), và biểu đồ phân bố t-SNE trên tập kiểm thử Weibo bị trộn lẫn hoàn toàn giữa hai lớp tin thật/tin giả.
-   - Khi gỡ bỏ `VRF` (`-w/o VRF`) hoặc gỡ bỏ phân hệ đối kháng `ACCIL` (`-w/o ACCIL`), độ chính xác giảm lần lượt **2,50%** và **2,53%**, chứng minh rằng suy luận thị giác sâu và lọc nhiễu bất biến phương thức là hai cánh tay đắc lực hỗ trợ cho đồ thị thực thể.
+   - Khi gỡ bỏ `VRF` (`-w/o VRF`) hoặc gỡ bỏ phân hệ đối kháng `ACCIL` (`-w/o ACCIL`), độ chính xác giảm lần lượt **2,50%** và **2,53%**, chứng minh rằng suy luận thị giác sâu và lọc nhiễu bất biến giữa các phương thức là hai cánh tay đắc lực hỗ trợ cho đồ thị thực thể.
 3. **Sức mạnh chống chịu nhiễu vượt trội (Robustness Analysis):**
    - Trong thử nghiệm tiêm nhiễu Gaussian từ cường độ $10^0$ đến $10^8$ và thử nghiệm che khuất (*occlusion/masking*) từ 10% đến 50% văn bản/hình ảnh trên 500 mẫu kiểm thử, CMA-VRP luôn duy trì đường cong độ chính xác cao nhất và ổn định nhất.
    - Phân tích khoảng cách Wasserstein (WD) lý giải rõ cơ chế này: khi cường độ nhiễu tăng lên $10^8$, biến thể không có `ACCIL` bị tăng vọt khoảng cách Wasserstein hơn $0,45$ đơn vị (hai phân phối văn bản và hình ảnh bị đẩy lệch xa nhau do nhiễu), kéo theo sự sụp đổ của độ chính xác phân loại. Ngược lại, khi có `ACCIL`, cơ chế CycleGAN Wasserstein kết hợp bộ phân biệt kép JSD giữ cho khoảng cách giữa hai phương thức ổn định và bảo toàn ranh giới phân lớp rõ nét trên biểu đồ t-SNE ngay cả dưới nhiễu Gaussian cường độ $10^6$.
@@ -453,16 +453,16 @@ Mô hình CMA-VRP được đánh giá trên 3 bộ dữ liệu chuẩn quy mô 
 
 Mặc dù khởi xuất từ hai miền ứng dụng khác nhau, khi đặt **MSIT** và **CMA-VRP** lên cùng một bàn cân học thuật, nhóm chúng tôi đúc kết được sự tương đồng sâu sắc trong tư duy giải quyết bài toán đa phương thức hiện đại, đồng thời làm nổi bật sự khác biệt mang tính bổ trợ giữa hai hướng tiếp cận:
 
-#### Bảng 5: Bảng đối sánh toàn diện hai khung phương pháp MSIT và CMA-VRP dưới góc nhìn kiến trúc hệ thống
+#### Bảng 5: Bảng đối sánh toàn diện hai phương pháp MSIT và CMA-VRP dưới góc nhìn kiến trúc hệ thống
 
-| Tiêu chí đối sánh | Khung phương pháp MSIT (ACL 2025) [1] | Khung phương pháp CMA-VRP (ACM MM 2025) [2] | Bài học Phương pháp luận Đúc kết chung |
+| Tiêu chí đối sánh | Phương pháp MSIT (ACL 2025) [1] | Phương pháp CMA-VRP (ACM MM 2025) [2] | Bài học Phương pháp luận Đúc kết chung |
 | :--- | :--- | :--- | :--- |
-| **1. Bản chất tác vụ & Đầu ra** | **Tác vụ Sinh mở (*Open-World Generation*):** Trích xuất chuỗi JSON các cặp `{thuộc tính : giá trị}` không giới hạn lược đồ từ ảnh và mô tả sản phẩm. | **Tác vụ Kiểm chứng & Phân loại (*Verification & Classification*):** Phát hiện sự bất đồng ngữ nghĩa giữa ảnh và bài viết để phân loại `Tin thật / Tin giả`. | Mọi bài toán đa phương thức phức tạp đều đòi hỏi sự kết hợp giữa **khai thác chi tiết cục bộ** và **kiểm chứng chéo liên phương thức**. |
+| **1. Bản chất tác vụ & Đầu ra** | **Khai phá & Sinh cấu trúc trong môi trường mở (*Open-World Attribute Mining*):** Sinh chuỗi JSON các cặp `{thuộc tính : giá trị}` không giới hạn lược đồ từ ảnh và mô tả sản phẩm. | **Kiểm chứng & Phân loại tính xác thực (*Verification & Classification*):** Phát hiện sự bất đồng ngữ nghĩa giữa ảnh và bài viết để phân loại `Tin thật / Tin giả`. | Mọi bài toán đa phương thức phức tạp đều đòi hỏi sự kết hợp giữa **khai phá chi tiết cục bộ** và **kiểm chứng chéo liên phương thức**. |
 | **2. Cách xử lý Thiên lệch & Giao thoa Phương thức** | **Tách biệt ở khâu Sinh dữ liệu ICL:** Đưa ảnh và văn bản vào GPT-4 trong hai lần gọi độc lập để tránh thiên lệch chú ý vào văn bản, sau đó mới hợp nhất. | **Tách biệt ở khâu Khởi tạo Đồ thị & VRP:** Xây dựng độc lập $\mathcal{G}_t$ (văn bản) và $\mathcal{G}_v$ (thị giác + OCR); dùng Mistral-7B riêng cho thực thể chữ và LLaVA-13B riêng cho thực thể ảnh. | **Nguyên lý "Chia để trị trước, Dung hợp sau":** Phải trích xuất đặc trưng độc lập trên từng phương thức trước khi đưa vào không gian chung để tránh một phương thức lấn át phương thức kia. |
-| **3. Chiến lược Khai thác MLLM / LVLM** | **Tinh chỉnh Hạng thấp (LoRA Fine-tuning):** Đóng băng mạng gốc và huấn luyện trực tiếp LoRA trên 3 MLLM 7B (LLaVA, Qwen-VL, InternLM) để vừa sinh vừa suy luận. | **Cố vấn Không tinh chỉnh (Zero-shot Prompting):** Giữ nguyên trọng số Mistral-7B và LLaVA-13B để trích xuất đặc trưng suy luận $VRF_t, VRF_v$ rồi mã hóa qua BERT nhằm tránh ảo giác khi fine-tune. | Tùy thuộc vào yêu cầu đầu ra: nếu cần mô hình tự sinh chuỗi cấu trúc thì dùng **LoRA + CoT có cấu trúc**; nếu cần biểu diễn phân loại ổn định thì dùng **LVLM như bộ trích xuất tri thức đóng băng**. |
-| **4. Thiết kế Chuỗi Tư duy (CoT)** | **CoT 5 bước kiểm chứng tuần tự:** Loại SP $\rightarrow$ Lẽ thường $\rightarrow$ Kiểm chứng ảnh $\rightarrow$ Kiểm chứng văn bản $\rightarrow$ Quyết định `Yes/No`. | **CoT 2 tầng hướng chân lý (VRP):** Tầng 1 lập luận lý do kiểm chứng cho từng thực thể $\rightarrow$ Tầng 2 tóm tắt đặc trưng thị giác kỳ vọng và thực tế. | **Không bao giờ dùng Vanilla CoT tự do** trên bài toán đa phương thức; phải chia nhỏ CoT thành các bước gắn chặt với thực thể và phương thức. |
+| **3. Chiến lược Khai thác MLLM / LVLM** | **Tinh chỉnh Hạng thấp (LoRA Fine-tuning):** Đóng băng mạng gốc và huấn luyện trực tiếp LoRA trên 3 MLLM 7B (LLaVA, Qwen-VL, InternLM) để vừa sinh vừa tự hiệu chỉnh. | **Cố vấn Không tinh chỉnh (Zero-shot Prompting):** Giữ nguyên trọng số Mistral-7B và LLaVA-13B để trích xuất đặc trưng suy luận $VRF_t, VRF_v$ rồi mã hóa qua BERT nhằm tránh ảo giác khi fine-tune. | Tùy thuộc vào yêu cầu đầu ra: nếu cần mô hình tự sinh chuỗi cấu trúc thì dùng **LoRA + CoT có cấu trúc**; nếu cần biểu diễn phân loại ổn định thì dùng **LVLM như bộ trích xuất tri thức đóng băng**. |
+| **4. Thiết kế Chuỗi Tư duy (CoT)** | **CoT 5 bước thẩm định tuần tự:** Loại SP $\rightarrow$ Lẽ thường $\rightarrow$ Xác thực trên ảnh $\rightarrow$ Xác minh trên văn bản $\rightarrow$ Quyết định `Yes/No`. | **CoT 2 tầng định hướng xác thực (VRP):** Tầng 1 lập luận lý do kiểm chứng cho từng thực thể $\rightarrow$ Tầng 2 tóm tắt đặc trưng thị giác kỳ vọng và thực tế. | **Không bao giờ dùng Vanilla CoT tự do** trên bài toán đa phương thức; phải chia nhỏ CoT thành các bước gắn chặt với thực thể và phương thức. |
 | **5. Chiến lược Học Tương phản (Contrastive Learning)** | **Tương phản ở mức Dữ liệu Chỉ dẫn (Data-level):** Ghép cân bằng 1:1 giữa thuộc tính đúng của SP (mẫu dương) và thuộc tính lấy từ ngành hàng khác (mẫu âm). | **Tương phản ở mức Đồ thị Biểu diễn (Representation-level):** Kết hợp $\mathcal{L}_{inter}$ (nhãn mềm $\theta$) và $\mathcal{L}_{intra}$ (che thực thể $p_m=0.2$ làm mẫu dương, trộn chéo phương thức nhãn đối lập làm mẫu âm). | Kỹ thuật **hoán đổi chéo thuộc tính/thực thể giữa các mẫu khác loại để tạo mẫu âm (hard/perturbed negatives)** là chìa khóa giúp mô hình học ranh giới ngữ nghĩa sắc bén. |
-| **6. Cơ chế Lọc nhiễu và Dư thừa** | **Lọc ở Không gian Đầu ra Rời rạc:** Dùng Word2Vec + 3 quy tắc độ dài từ con (Giai đoạn 2) kết hợp lọc bằng CoT 5 bước (Giai đoạn 3, tự sửa lỗi 98,6%). | **Lọc ở Không gian Tiềm ẩn Liên tục (ACCIL):** Dùng CycleGAN Wasserstein có trọng số VRF kết hợp bộ phân biệt kép $D_0, D_1$ cực tiểu hóa phân kỳ JSD. | Sự kết hợp giữa lọc ngữ nghĩa và căn chỉnh phân phối giúp hệ thống duy trì độ chính xác cao trong môi trường dữ liệu mở và nhiều nhiễu. |
+| **6. Cơ chế Lọc nhiễu và Tự hiệu chỉnh** | **Lọc và Tự hiệu chỉnh ở Không gian Đầu ra Rời rạc:** Dùng Word2Vec + 3 quy tắc độ dài từ con (Giai đoạn 2) kết hợp thẩm định bằng CoT 5 bước (Giai đoạn 3, tự hiệu chỉnh 98,6%). | **Lọc nhiễu ở Không gian Tiềm ẩn Liên tục (ACCIL):** Dùng CycleGAN Wasserstein có trọng số VRF kết hợp bộ phân biệt kép $D_0, D_1$ cực tiểu hóa phân kỳ JSD. | Sự kết hợp giữa tự hiệu chỉnh ngữ nghĩa và căn chỉnh phân phối giúp hệ thống duy trì độ chính xác cao trong môi trường mở và nhiều nhiễu. |
 
 ---
 
@@ -471,18 +471,18 @@ Mặc dù khởi xuất từ hai miền ứng dụng khác nhau, khi đặt **MS
 Bên cạnh những đóng góp xuất sắc đã được chứng minh qua thực nghiệm, dưới góc độ phản biện khoa học và trải nghiệm trực tiếp khi tái lập mã nguồn, nhóm chúng tôi chỉ ra một số hạn chế còn tồn đọng của cả hai công trình cũng như cơ hội giao thoa giữa chúng:
 
 1. **Đánh giá phản biện đối với Bài báo 1 (MSIT):**
-   - *Chi phí suy luận tuần tự ở Giai đoạn 3 ($\mathcal{O}(k)$ lần gọi MLLM):* Trong Giai đoạn 1, mô hình chỉ cần 1 lần gọi để sinh ra $k$ thuộc tính ứng viên. Tuy nhiên, ở Giai đoạn 3, mô hình phải chạy suy luận chuỗi tư duy 5 bước **lần lượt cho từng thuộc tính** trong số $k'$ thuộc tính sau lọc. Nếu một sản phẩm có 15 thuộc tính, hệ thống phải gọi MLLM thêm 15 lần với chuỗi token đầu ra dài, gây độ trễ lớn khi triển khai thời gian thực trên sàn thương mại điện tử hàng triệu sản phẩm.
+   - *Chi phí thẩm định tuần tự ở Giai đoạn 3 ($\mathcal{O}(k)$ lần gọi MLLM):* Trong Giai đoạn 1, mô hình chỉ cần 1 lần gọi để sinh hàng loạt $k$ thuộc tính ứng viên. Tuy nhiên, ở Giai đoạn 3, mô hình phải chạy suy luận chuỗi tư duy 5 bước **lần lượt cho từng thuộc tính** trong số $k'$ thuộc tính sau lọc. Nếu một sản phẩm có 15 thuộc tính, hệ thống phải gọi MLLM thêm 15 lần với chuỗi token đầu ra dài, gây độ trễ lớn khi triển khai thời gian thực trên sàn thương mại điện tử hàng triệu sản phẩm.
    - *Tính cứng nhắc của 3 quy tắc xóa từ đồng nghĩa ở Giai đoạn 2:* Như nhóm đã kiểm chứng khi cài đặt `stage2_dedup.py`, thuật toán khớp từ đồng nghĩa ở Phụ lục B.2 đòi hỏi hai cụm từ phải có tương ứng **một-đối-một** giữa các từ con khi tính tương đồng cosine trên `word2vec-google-news-300`, trong khi các quy tắc xóa (Quy tắc 1, 2, 3) lại xét các trường hợp độ dài từ con lệch nhau ($1$ so với $3$, $2$ so với $\ge 3$). Sự thiếu nhất quán nhẹ giữa điều kiện khớp một-đối-một và điều kiện độ dài trong mô tả bài báo cùng việc dùng mô hình tĩnh Word2Vec (không nắm bắt được ngữ cảnh đa nghĩa như BERT) có thể làm giảm hiệu quả lọc trùng lặp trên các thuật ngữ chuyên ngành mới.
 2. **Đánh giá phản biện đối với Bài báo 2 (CMA-VRP):**
    - *Độ phức tạp của hệ thống tiền xử lý đa tầng:* Để xử lý một bản tin, CMA-VRP phải chạy qua một chuỗi công cụ rất nặng: bộ phân tích cú pháp phụ thuộc (spaCy/Stanford NLP), mạng phát hiện đối tượng và sinh đồ thị cảnh (Mask-RCNN), hệ thống nhận diện chữ (Rosetta OCR), mô hình ngôn ngữ Mistral-7B (2 lần prompt cho $N_t$ thực thể), mô hình thị giác - ngôn ngữ LLaVA-1.6-13B (2 lần prompt cho $N_v$ thực thể), bộ mã hóa BERT, rồi mới đưa vào mạng đồ thị và mạng đối kháng CycleGAN. Nếu bất kỳ mắt xích đầu nguồn nào (như Mask-RCNN hay OCR trên ảnh quá mờ) gặp lỗi lan truyền (*cascading error*), chất lượng đồ thị đầu vào sẽ bị ảnh hưởng.
 3. **Hướng tích hợp hai công trình trong tương lai:**
    Hai công trình có thể bổ sung trực tiếp những mảnh ghép còn thiếu cho nhau:
    - Có thể đưa kỹ thuật **Đồ thị thực thể thị giác kết hợp nút văn bản Rosetta OCR ($\mathcal{G}_v + v_{ocr}$)** của CMA-VRP vào MSIT để giúp MLLM đọc chính xác hơn các bảng thành phần dinh dưỡng nhỏ li ti trên bao bì sản phẩm (như nhãn lọ Vitamin trong tập WOAM).
-   - Ngược lại, có thể áp dụng kỹ thuật **Tinh chỉnh chỉ dẫn QLoRA với dữ liệu CoT 5 bước tương phản** của MSIT để chưng cất (*distill*) quy trình trích xuất VRF cồng kềnh (gồm cả Mistral-7B lẫn LLaVA-13B) của CMA-VRP thành một mô hình gọn nhẹ duy nhất.
+   - Ngược lại, có thể áp dụng kỹ thuật **Tinh chỉnh theo chỉ dẫn QLoRA với dữ liệu CoT 5 bước tương phản có khả năng tự hiệu chỉnh** của MSIT để chưng cất (*distill*) quy trình trích xuất VRF cồng kềnh (gồm cả Mistral-7B lẫn LLaVA-13B) của CMA-VRP thành một mô hình gọn nhẹ duy nhất.
 
 ### 5.3. Kết luận Chung
 
-Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh phương pháp luận và tái lập thực nghiệm thành công trên hai công trình tiêu biểu của hội nghị ACL 2025 (**MSIT**) và ACM Multimedia 2025 (**CMA-VRP**). Dù giải quyết hai bài toán thuộc hai lĩnh vực ứng dụng khác nhau là khai thác thuộc tính sản phẩm thương mại điện tử và phát hiện tin giả mạng xã hội, cả hai nghiên cứu đều hội tụ tại một triết lý thiết kế hiện đại: **kết hợp sức mạnh biểu diễn đa phương thức với cơ chế tách biệt phương thức, suy luận chuỗi tư duy có cấu trúc chặt chẽ và học tương phản chống nhiễu**. Quá trình tự xây dựng lại toàn bộ mã nguồn, kiến tạo 1.300 mẫu dữ liệu đa phương thức và tinh chỉnh mô hình bằng kỹ thuật QLoRA trên bài báo MSIT không chỉ giúp nhóm kiểm chứng thực tế tính hiệu quả của phương pháp mà còn cung cấp một nền tảng mã nguồn mở hoàn chỉnh phục vụ các nghiên cứu tiếp theo.
+Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh phương pháp luận và tái lập thực nghiệm thành công trên hai công trình tiêu biểu của hội nghị ACL 2025 (**MSIT**) và ACM Multimedia 2025 (**CMA-VRP**). Dù giải quyết hai bài toán thuộc hai lĩnh vực ứng dụng khác nhau là khai phá thuộc tính sản phẩm thương mại điện tử trong môi trường mở và phát hiện tin giả mạng xã hội, cả hai nghiên cứu đều hội tụ tại một triết lý thiết kế hiện đại: **kết hợp sức mạnh biểu diễn đa phương thức với cơ chế tách biệt phương thức, suy luận chuỗi tư duy có cấu trúc chặt chẽ, tự hiệu chỉnh và học tương phản chống nhiễu**. Quá trình tự xây dựng lại toàn bộ mã nguồn, kiến tạo 1.300 mẫu dữ liệu đa phương thức và tinh chỉnh mô hình bằng kỹ thuật QLoRA trên bài báo MSIT không chỉ giúp nhóm kiểm chứng thực tế tính hiệu quả của phương pháp mà còn cung cấp một nền tảng mã nguồn mở hoàn chỉnh phục vụ các nghiên cứu tiếp theo.
 
 ---
 
@@ -552,7 +552,7 @@ Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh
 
 - **Mã sản phẩm (ASIN):** `B07GT3XTKP` | **Danh mục:** `VITAMIN`
 - **Tiêu đề:** *"Biotin 5000 mcg - (ONE Daily) | Hair Growth Vitamins with Coconut Oil | Supports Healthy Hair Skin and Nails | Non GMO, Organic (1 Month Supply)"*
-- **Các thuộc tính đa phương thức được trích xuất và hợp nhất (kết hợp cả văn bản và hình ảnh lọ sản phẩm):**
+- **Các thuộc tính đa phương thức được khai phá và hợp nhất (kết hợp cả văn bản và hình ảnh lọ sản phẩm):**
 
   ```json
   {
@@ -577,7 +577,7 @@ Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh
   }
   ```
 
-  *(Lưu ý: Ba thuộc tính cuối cùng là `"color": "black"`, `"shape": "cylindrical"`, và `"packaging_type": "bottle"` hoàn toàn không xuất hiện trong văn bản mô tả mà được trích xuất từ kênh hình ảnh chụp lọ sản phẩm).*
+  *(Lưu ý: Ba thuộc tính cuối cùng là `"color": "black"`, `"shape": "cylindrical"`, và `"packaging_type": "bottle"` hoàn toàn không xuất hiện trong văn bản mô tả mà được khai phá từ kênh hình ảnh chụp lọ sản phẩm).*
 
 #### A.2. Mẫu dữ liệu suy luận 5 bước CTTD thực tế (`msit/data/sft_datasets/cttd_train.jsonl`)
 
@@ -585,8 +585,8 @@ Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh
 - **Chuỗi suy luận 5 bước được sinh ra:**
   - *Bước 1 (Xác định loại sản phẩm):* Sản phẩm là thực phẩm bổ sung dinh dưỡng, cụ thể là viên uống vitamin nhóm B từ thực phẩm toàn phần hỗ trợ năng lượng tế bào.
   - *Bước 2 (Phân tích theo tri thức thông thường):* Đánh giá thuộc tính mục tiêu dựa trên ngữ cảnh sản phẩm bổ sung năng lượng tế bào và sức khỏe ty thể.
-  - *Bước 3 (Kiểm chứng từ hình ảnh):* Quan sát bao bì sản phẩm hướng tới nhóm người dùng cần tăng cường năng lượng tế bào.
-  - *Bước 4 (Kiểm chứng từ văn bản):* Mô tả văn bản nêu rõ công dụng hỗ trợ sản sinh năng lượng tế bào và chức năng ty thể.
+  - *Bước 3 (Xác thực từ hình ảnh):* Quan sát bao bì sản phẩm hướng tới nhóm người dùng cần tăng cường năng lượng tế bào.
+  - *Bước 4 (Xác minh từ văn bản):* Mô tả văn bản nêu rõ công dụng hỗ trợ sản sinh năng lượng tế bào và chức năng ty thể.
   - *Bước 5 (Kết luận):* Tổng hợp cả hình ảnh và văn bản xác nhận sản phẩm sở hữu thuộc tính đang xét $\rightarrow$ Quyết định cuối cùng: **`Yes`**.
 
 ---
@@ -595,9 +595,9 @@ Báo cáo đã thực hiện khảo sát, phân tích lý thuyết, đối sánh
 
 Để đảm bảo bản PDF xuất ra từ LaTeX tuân thủ tuyệt đối mọi quy định trong file `docs/YEU_CAU.md`, nhóm đã chuẩn hóa báo cáo này theo danh sách kiểm tra sau:
 
-1. **Tên file PDF nộp:** Đặt tên theo đúng cú pháp `MSHV1-MSHV2.pdf` (ví dụ: `2470001-2470002.pdf`, ngăn cách bằng dấu gạch nối `-`, hoặc `MSHV.pdf` nếu nhóm 1 người).
-2. **Giới hạn dung lượng và số trang:** Kích thước file PDF **$< 20\text{ MB}$** và tổng số trang **$\le 25\text{ trang}$** (đã tính cả trang bìa, phần tài liệu tham khảo và phụ lục). Với độ dài hiện tại của bản thảo Markdown này, khi biên dịch bằng gói `\documentclass[conference]{IEEEtran}` hoặc `\documentclass[journal]{IEEEtran}` hai cột sẽ rơi vào khoảng **12–16 trang chuẩn IEEE**, nằm hoàn toàn trong ngưỡng an toàn ($\le 25$ trang).
+1. **Tên file PDF nộp:** Đặt tên theo đúng cú pháp `MSHV1-MSHV2.pdf` (ngăn cách bằng dấu gạch nối `-`, hoặc `MSHV.pdf` nếu nhóm 1 người).
+2. **Giới hạn dung lượng và số trang:** Kích thước file PDF **$< 20\text{ MB}$** và tổng số trang **$\le 25\text{ trang}$** (đã tính cả trang bìa, phần tài liệu tham khảo và phụ lục).
 3. **Bao gồm cả hai bài báo trong một báo cáo thống nhất:** Đã tích hợp liền mạch Bài báo 1 (MSIT — bài Seminar & Tái lập thực nghiệm tại Mục III) và Bài báo 2 (CMA-VRP — bài Báo cáo tại Mục IV) dưới một khung lý thuyết chung (Mục I, II) và đối sánh tổng hợp (Mục V).
-4. **Diễn đạt độc lập và Trực quan hóa lại:** Toàn bộ nội dung lý thuyết, phân tích công thức và nhận xét thực nghiệm đều được viết mới hoàn toàn bằng lời văn học thuật của nhóm; các sơ đồ kiến trúc (Hình 1, Hình 2, Hình 3) được nhóm tự thiết kế lại (có thể xuất từ Mermaid sang vector PDF/PNG độ phân giải 300 DPI để chèn vào lệnh `\includegraphics` trong LaTeX).
-5. **Thống nhất một ngôn ngữ duy nhất:** Sử dụng xuyên suốt **Tiếng Việt học thuật**, không pha trộn câu từ tiếng Anh - tiếng Việt tùy tiện.
-6. **Gắn liên kết công khai Weights & Biases và GitHub Repository:** Đã chừa sẵn các vị trí gắn liên kết `\href{https://wandb.ai/...}{...}` tương ứng với từng phần thực nghiệm (Huấn luyện chính, Kết quả chính, Nghiên cứu cắt bỏ, Tự sửa lỗi CoT) trong Mục 3.4.2 và dẫn link tới GitHub Repository (`https://github.com/linhnnh688/msit-open-world`).
+4. **Diễn đạt độc lập và Trực quan hóa lại:** Toàn bộ nội dung lý thuyết, phân tích công thức và nhận xét thực nghiệm đều được viết mới hoàn toàn bằng lời văn học thuật tự nhiên của nhóm; các sơ đồ kiến trúc (Hình 1, Hình 2, Hình 3) được nhóm tự thiết kế lại bằng vector TikZ trong tệp LaTeX.
+5. **Thống nhất một ngôn ngữ duy nhất:** Sử dụng xuyên suốt **Tiếng Việt học thuật**.
+6. **Gắn liên kết công khai Weights & Biases và GitHub Repository:** Đã tích hợp các vị trí gắn liên kết `\href{https://wandb.ai/...}{...}` tương ứng với từng phần thực nghiệm trong Mục 3.4.2 và dẫn link tới GitHub Repository (`https://github.com/linhnnh688/msit-open-world`).

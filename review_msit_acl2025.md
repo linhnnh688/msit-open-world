@@ -54,7 +54,7 @@ flowchart TD
         Split --> ICL["In-Context Learning (GPT-4)"]
         ICL --> Merge["Gộp thuộc tính (GPT-4) & Review"]
         Merge --> AGTD["AGTD (Attribute Generation Tuning Data)"]
-        
+
         AGTD --> CoT_5Step["Cấu trúc 5 bước suy luận CoT"]
         CoT_5Step --> NegSample["Bổ sung Mẫu âm đối nghịch (Contrastive CoT)"]
         NegSample --> CTTD["CTTD (CoT Tuning Data)"]
@@ -80,8 +80,8 @@ flowchart TD
 - **Mở rộng dữ liệu:** Tác giả lấy hai tập dữ liệu đơn phương thức chuẩn nổi tiếng là **WOAM** (gồm Tea, Vitamin, Sofa, Phone Case) và **OAMine** (100 product types), sau đó thu thập hình ảnh sản phẩm tương ứng từ **Amazon.com** để biến thành dữ liệu đa phương thức.
 - **Seed Dataset:** Xây dựng tập thuộc tính mẫu ban đầu được kiểm duyệt kỹ càng cho từng loại sản phẩm.
 - **Giải quyết Modality Attention Bias:**
-  - *Quan sát thực nghiệm:* Khi đưa cả ảnh và văn bản vào GPT-4 cùng lúc, mô hình bị thiên kiến chú ý mạnh vào văn bản và gần như bỏ qua hình ảnh.
-  - *Giải pháp:* Đưa ảnh riêng để sinh `Image Attributes`, đưa văn bản riêng để sinh `Text Attributes`. Sau đó dùng GPT-4 gộp (merge) lại và con người kiểm duyệt lọc bỏ thuộc tính sai.
+  - _Quan sát thực nghiệm:_ Khi đưa cả ảnh và văn bản vào GPT-4 cùng lúc, mô hình bị thiên kiến chú ý mạnh vào văn bản và gần như bỏ qua hình ảnh.
+  - _Giải pháp:_ Đưa ảnh riêng để sinh `Image Attributes`, đưa văn bản riêng để sinh `Text Attributes`. Sau đó dùng GPT-4 gộp (merge) lại và con người kiểm duyệt lọc bỏ thuộc tính sai.
 - **Định dạng đầu ra:** Toàn bộ dữ liệu được cấu trúc dưới dạng cặp **Thuộc tính - Giá trị** (`{Attribute: Value}`) thay vì chỉ lưu tên thuộc tính.
 
 ---
@@ -90,13 +90,13 @@ flowchart TD
 
 Để triệt tiêu ảo giác và giúp MLLM tự kiểm chứng (self-correction), tác giả thiết kế quy trình lập luận **5 bước chặt chẽ**:
 
-| Bước | Tên bước | Chức năng cụ thể |
-| :--- | :--- | :--- |
-| **Step 1** | **Product Type Range Narrowing** | Phân tích cả ảnh và văn bản để xác định chính xác danh mục/loại sản phẩm (vd: ốp điện thoại, trà thảo mộc, sofa...), từ đó khoanh vùng phạm vi các thuộc tính hợp lệ. |
+| Bước       | Tên bước                                           | Chức năng cụ thể                                                                                                                                                                                        |
+| :--------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Step 1** | **Product Type Range Narrowing**                   | Phân tích cả ảnh và văn bản để xác định chính xác danh mục/loại sản phẩm (vd: ốp điện thoại, trà thảo mộc, sofa...), từ đó khoanh vùng phạm vi các thuộc tính hợp lệ.                                   |
 | **Step 2** | **Reasoning with Internal Common-sense Knowledge** | Áp dụng tri thức thường thức (Common-sense) để đánh giá sơ bộ xem thuộc tính đang xét có ý nghĩa và có thể áp dụng cho loại sản phẩm này không (vd: Vitamin thì không thể có thuộc tính `screen_size`). |
-| **Step 3** | **Image-Based Attribute Validation** | Dùng hình ảnh để xác minh xem sản phẩm có thuộc tính này hay không (chỉ cần xác nhận giá trị thô/ước lượng từ hình ảnh). |
-| **Step 4** | **Text-Based Attribute Verification** | Dùng văn bản để xác nhận xem có bằng chứng rõ ràng cho thuộc tính không; nếu có thì trích xuất giá trị chính xác. |
-| **Step 5** | **Final Evaluation and Decision-Making** | Tổng hợp toàn bộ suy luận ở 4 bước trước để đưa ra phán quyết nhị phân cuối cùng: **Yes** (hợp lệ) hoặc **No** (bác bỏ). |
+| **Step 3** | **Image-Based Attribute Validation**               | Dùng hình ảnh để xác minh xem sản phẩm có thuộc tính này hay không (chỉ cần xác nhận giá trị thô/ước lượng từ hình ảnh).                                                                                |
+| **Step 4** | **Text-Based Attribute Verification**              | Dùng văn bản để xác nhận xem có bằng chứng rõ ràng cho thuộc tính không; nếu có thì trích xuất giá trị chính xác.                                                                                       |
+| **Step 5** | **Final Evaluation and Decision-Making**           | Tổng hợp toàn bộ suy luận ở 4 bước trước để đưa ra phán quyết nhị phân cuối cùng: **Yes** (hợp lệ) hoặc **No** (bác bỏ).                                                                                |
 
 #### Contrastive Chain-of-Thought Tuning Data (Mẫu âm đối nghịch)
 
@@ -112,10 +112,10 @@ Khi triển khai trên dữ liệu thực tế, MSIT không chạy CoT một cá
 2. **Stage 2 - Filtering Repeated Attributes:** Lọc bỏ các thuộc tính đồng nghĩa/trùng lặp (vd: `type` vs `product type`):
    - Sử dụng vector nhúng **`word2vec-google-news-300`** tính cosine similarity giữa các subword.
    - Áp dụng hệ thống **3 Quy tắc heuristic (Rule-based)** dựa trên độ dài subword:
-     - *Rule 1:* Nếu một thuộc tính có 1 subword (A) và thuộc tính kia (B) có 3 subword, xóa A. Nếu B có $>3$ subword, xóa B.
-     - *Rule 2:* Nếu một thuộc tính có 2 subword và thuộc tính kia có $\ge 3$ subword, xóa thuộc tính dài hơn (B).
-     - *Rule 3:* Nếu cả hai có cùng số subword, xóa ngẫu nhiên 1 trong 2.
-   - *Tác dụng:* Giảm đáng kể chi phí tính toán cho giai đoạn tiếp theo và tăng độ tinh gọn.
+     - _Rule 1:_ Nếu một thuộc tính có 1 subword (A) và thuộc tính kia (B) có 3 subword, xóa A. Nếu B có $>3$ subword, xóa B.
+     - _Rule 2:_ Nếu một thuộc tính có 2 subword và thuộc tính kia có $\ge 3$ subword, xóa thuộc tính dài hơn (B).
+     - _Rule 3:_ Nếu cả hai có cùng số subword, xóa ngẫu nhiên 1 trong 2.
+   - _Tác dụng:_ Giảm đáng kể chi phí tính toán cho giai đoạn tiếp theo và tăng độ tinh gọn.
 3. **Stage 3 - Sequential Attribute Inference with 5-step CoT:** Đưa lần lượt từng thuộc tính còn lại qua quy trình CoT 5 bước của MLLM. Chỉ những thuộc tính có phán quyết cuối cùng ở Bước 5 là **"Yes"** mới được giữ lại.
 
 ---
@@ -146,16 +146,16 @@ Khi triển khai trên dữ liệu thực tế, MSIT không chạy CoT một cá
 
 Dưới đây là bảng tóm tắt kết quả chính trên 2 tập dữ liệu (đơn vị: %):
 
-| Mô hình | WOAM Similar Match (P / R) | WOAM Exact Match (P / R) | OAMine Similar Match (P / R) | OAMine Exact Match (P / R) |
-| :--- | :---: | :---: | :---: | :---: |
-| **LLAVA-7B** (Gốc) | 40.49 / 56.21 | 10.61 / 26.22 | 47.07 / 54.99 | 16.71 / 26.82 |
-| **LLAVA-13B** | 41.22 / 64.62 | 10.52 / 37.72 | 51.87 / 58.59 | 21.46 / 37.75 |
-| **GPT-4** | 52.03 / 65.35 | 15.51 / 41.60 | 64.92 / 55.75 | 29.25 / 33.72 |
-| **OA-Mine** | 42.27 / 53.62 | 17.52 / 26.72 | 53.85 / 47.71 | 18.15 / 35.69 |
-| **Amacer** | 51.27 / 58.30 | 21.91 / 29.23 | 58.41 / 51.65 | 22.98 / 38.84 |
-| **MSIT (Qwen)** | 59.95 / 41.60 | 20.00 / 23.75 | 65.01 / 52.44 | 24.61 / 38.13 |
-| **MSIT (InternLM)** | 63.40 / 46.80 | 25.00 / 25.53 | 70.79 / 46.99 | 37.52 / 27.37 |
-| **MSIT (LLAVA-7B)** | **66.90 / 66.99** | **35.34 / 52.50** | **74.50 / 63.06** | **54.33 / 51.54** |
+| Mô hình             | WOAM Similar Match (P / R) | WOAM Exact Match (P / R) | OAMine Similar Match (P / R) | OAMine Exact Match (P / R) |
+| :------------------ | :------------------------: | :----------------------: | :--------------------------: | :------------------------: |
+| **LLAVA-7B** (Gốc)  |       40.49 / 56.21        |      10.61 / 26.22       |        47.07 / 54.99         |       16.71 / 26.82        |
+| **LLAVA-13B**       |       41.22 / 64.62        |      10.52 / 37.72       |        51.87 / 58.59         |       21.46 / 37.75        |
+| **GPT-4**           |       52.03 / 65.35        |      15.51 / 41.60       |        64.92 / 55.75         |       29.25 / 33.72        |
+| **OA-Mine**         |       42.27 / 53.62        |      17.52 / 26.72       |        53.85 / 47.71         |       18.15 / 35.69        |
+| **Amacer**          |       51.27 / 58.30        |      21.91 / 29.23       |        58.41 / 51.65         |       22.98 / 38.84        |
+| **MSIT (Qwen)**     |       59.95 / 41.60        |      20.00 / 23.75       |        65.01 / 52.44         |       24.61 / 38.13        |
+| **MSIT (InternLM)** |       63.40 / 46.80        |      25.00 / 25.53       |        70.79 / 46.99         |       37.52 / 27.37        |
+| **MSIT (LLAVA-7B)** |     **66.90 / 66.99**      |    **35.34 / 52.50**     |      **74.50 / 63.06**       |     **54.33 / 51.54**      |
 
 #### Những điểm nổi bật
 
